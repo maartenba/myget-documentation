@@ -3,7 +3,7 @@
 When requested, the [MyGet Enterprise plan](http://www.myget.org/enterprise) provides support for Azure Active Directory to log in. This document describes the required configuration steps on your Azure Active Directory tenant. Note that Azure Active Directory B2C is not currently supported.
 
 <p class="alert alert-info">
-    <strong>Note:</strong> To log in to your feed from Visual Studio, credentials obtained from Azure Active Directory can currently <strong>not</strong> be used as the NuGet client does not support this. Private feeds will still require authentication to happen based on MyGet credentials. Azure Active Directory integration will only work for logging in to the MyGet web interface. 
+    <strong>Note:</strong> To log in to your feed, credentials obtained from Active Directory can currently <strong>not</strong> be used as the various package management clients (such as Visual Studio or, the NuGet client or npm) don't support this. Private feeds will still require authentication to happen based on MyGet credentials. ADFS integration will only work for logging in to the MyGet web interface. 
 </p>
 
 ## Configuring Azure Active Directory with the MyGet Enterprise plan
