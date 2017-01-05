@@ -2,10 +2,11 @@
 
 ## Examples for doc writer
 * [Source code](methods.md)
+* [Notes\/alerts\/callouts](notesalertscallouts.md)
 
 ## Getting started
 * [What is MyGet?](README.md)
-* [Creating a MyGet feed/repository](creating-a-myget-repository.md)
+* [Creating a MyGet feed\/repository](creating-a-myget-repository.md)
 * [Inviting collaborators to a feed](inviting-collaborators-to-a-feed.md)
 * MyGet gallery
 * Frequently Asked Questions \(FAQ\)
@@ -88,15 +89,15 @@
 * [What are web hooks?](webhooks/webhooks.md)
 * [HTTP POST web hooks](webhooks/webhooks.md#http-post-webhook)
     * Events
-	    * [Ping](webhooks/webhooks.md#ping)
-	    * [Package added](webhooks/webhooks.md#package-added)
-	    * [Package deleted](webhooks/webhooks.md#package-deleted)
-	    * [Package listed/unlisted](webhooks/webhooks.md#package-listed-unlisted)
-	    * [Package pinned/unpinned](webhooks/webhooks.md#package-pinned-unpinned)
-	    * [Package pushed](webhooks/webhooks.md#package-pushed)
-	    * [Build queued](webhooks/webhooks.md#build-queued)
-	    * [Build started](webhooks/webhooks.md#build-started)
-	    * [Build finished](webhooks/webhooks.md#build-finished)
+        * [Ping](webhooks/webhooks.md#ping)
+        * [Package added](webhooks/webhooks.md#package-added)
+        * [Package deleted](webhooks/webhooks.md#package-deleted)
+        * [Package listed\/unlisted](webhooks/webhooks.md#package-listed-unlisted)
+        * [Package pinned\/unpinned](webhooks/webhooks.md#package-pinned-unpinned)
+        * [Package pushed](webhooks/webhooks.md#package-pushed)
+        * [Build queued](webhooks/webhooks.md#build-queued)
+        * [Build started](webhooks/webhooks.md#build-started)
+        * [Build finished](webhooks/webhooks.md#build-finished)
     * Samples
         * TODO Samples from blog
         * TODO ASP.NET Web API web hook receiver
@@ -111,7 +112,7 @@
 * [Management dashboard](myget-enterprise/management-dashboard.md)
     * [Statistics](myget-enterprise/management-dashboard.md#statistics)
     * [Accounts](myget-enterprise/management-dashboard.md#accounts)
-		* [Registration](myget-enterprise/management-dashboard.md#registration)
+        * [Registration](myget-enterprise/management-dashboard.md#registration)
         * [IP security](myget-enterprise/management-dashboard.md#ip-security)
         * [Login](myget-enterprise/management-dashboard.md#registration-and-login)
         * [Passwords](myget-enterprise/management-dashboard.md#passwords)
