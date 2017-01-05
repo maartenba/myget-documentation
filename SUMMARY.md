@@ -2,7 +2,7 @@
 
 ## Examples for doc writer
 * [Source code](methods.md)
-* [Notes\/alerts\/callouts](notesalertscallouts.md)
+* [Notes, alerts and callouts](notesalertscallouts.md)
 
 ## Getting started
 * [What is MyGet?](README.md)
