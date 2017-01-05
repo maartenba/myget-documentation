@@ -32,7 +32,7 @@ When you're done, leave the **Open the Edit Claim Rules dialog** option checked.
 2.	Select **Pass Through or Filter an Incoming Claim** as the template to use and click **Next**.
 3.	Now we'll configure a claim (i.e. piece of identity like username, email address etc.) to be passed through to MyGet. Just select the claim from the drop down list, specify a name and click **Finish**. Make sure the **Pass through all claim values** option is selected.
 
-	![Pass through all claim values](Images/pass-through-claims.png)
+	![Pass through all claim values](assets/pass-through-claims.png)
  
 4.	Repeat the above steps 3 times. MyGet will need the following claims from the dropdown (select a different one in every step):
 
