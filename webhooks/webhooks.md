@@ -1,6 +1,8 @@
 # Webhooks
 
-Every MyGet feed provides the option to communicate with external services, such as a web server, whenever a specific action occurs on the feed. These webhooks can be used to perform actions based on such event, for example sending out a tweet when a package is pushed or updating an issue tracker when a build succeeds.
+Web hooks can be used to perform actions based on an event, for example sending out a tweet when a package is pushed or updating an issue tracker when a build succeeds.
+
+Every MyGet feed provides the option to communicate with external services, such as a web server, whenever a specific action occurs on the feed. These webhooks can be used to perform actions based on such event, for example sending out a tweet when a package is pushed or updating an issue tracker when a build succeeds. It's not always required to write custom code though: we integrate with a variety of services such as Twitter, Twilio, HipChat and starting today, with Visual Studio Online Team Rooms and Slack.
 
 Only feed owners and co-owners can manage webhooks for a feed. Each webhook can be triggered for one or more event types, depending on the implementation. Webhook deliveries can be inspected, including full logs, as well as redelivered in case this is needed. 
 
