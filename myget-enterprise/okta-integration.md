@@ -2,6 +2,10 @@
 
 Many companies make use of single sign-on providers like [Okta](http://www.okta.com). Using Okta, users in your organization can easily login to company approved apps, of which MyGet could be one. This document describes the required configuration steps on your Okta administraton page.
 
+<p class="alert alert-info">
+    <strong>Note:</strong> To log in to your feed, credentials obtained from Active Directory can currently <strong>not</strong> be used as the various package management clients (such as Visual Studio or, the NuGet client or npm) don't support this. Private feeds will still require authentication to happen based on MyGet credentials. ADFS integration will only work for logging in to the MyGet web interface. 
+</p>
+
 ## 1. Add a new Template App
 
 From the Okta administration, use the top menu and navigate to _Applications_. Use the search box to create a new app and search for `Template App`. We will use this template to configure MyGet as an application with Okta.
