@@ -99,18 +99,10 @@
 
 ## Enterprise
 * [Management dashboard](myget-enterprise/management-dashboard.md)
-    * Statistics
-    * Accounts
-    * Users
-    * Feeds
-    * Analytics
-    * Gallery
-    * SMTP settings
-    * Default quota
 * Identity providers
-    * ADFS integration
-    * Azure AD Integration
-    * Okta integration
+    * [ADFS integration]](myget-enterprise/adfs-integration.md)
+    * [Azure AD Integration]](myget-enterprise/azure-ad-integration.md)
+    * [Okta integration]](myget-enterprise/okta-integration.md)
 
 ## Reference
 * Capturing traffic with Fiddler
