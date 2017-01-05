@@ -98,7 +98,7 @@
     * Twitter
 
 ## Enterprise
-* [Management dashboard](management-dashboard.md)
+* [Management dashboard](myget-enterprise/management-dashboard.md)
     * Statistics
     * Accounts
     * Users
