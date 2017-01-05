@@ -53,7 +53,7 @@
     * Creating VSIX packages \(+ very short intro to build services\)
     * Publishing to MyGet
 
-## Scenarios
+## How-to
 * Working with retention rules
 * Working with upstream package sources
     * As a package proxy
