@@ -11,7 +11,7 @@ Theory is nice, but it's always good to see some practical samples of implementi
 MyGet offers [retention policies](todo) that run whenever a package is added to a feed. These retention policies offer some options on when a package can be automatically removed from a feed, but it may be useful to implement a custom retention policy that is triggered [when a package is added](webhooks.md#package-added).
 
 <p class="alert alert-info">
-<strong>Note:</strong> Core for this example is <a href="https://github.com/MyGet/webhooks-custom-retention">available on GitHub</a>.
+<strong>Note:</strong> Code for this example is <a href="https://github.com/MyGet/webhooks-custom-retention">available on GitHub</a>.
 </p>
 
 We'll first need something that can run our custom logic whenever a webhook event is raised. This can be an ASP.NET MVC, Web API, NancyFx or even a PHP application. In this case, let’s go with an ASP.NET Web API controller. We want to be triggered on POST when a package added event is raised.
@@ -73,7 +73,7 @@ When this hook now triggers, we will be retaining just the 5 latest minor versio
 Some developers prefer to strong name sign their .NET assemblies. Signing them also means that the dependencies that are consumed must be signed. Not all third-party dependencies are signed, though, for example when consuming packages from NuGet. Some are signed, some are unsigned, and the only way to know is by seeing compiler errors. Using web hooks, we can create a signed version of our NuGet packages whenever we push an unsigned version to MyGet.
 
 <p class="alert alert-info">
-<strong>Note:</strong> Core for this example is <a href="https://github.com/MyGet/webhooks-sign-package">available on GitHub</a>.
+<strong>Note:</strong> Code for this example is <a href="https://github.com/MyGet/webhooks-sign-package">available on GitHub</a>.
 </p>
 
 The [Assembly Strong Naming Toolkit](https://www.nuget.org/packages/Nivot.StrongNaming/) can be installed into our project, after which we can use the NuGet Package Manager Console to sign referenced assemblies. There is also the [.NET Assembly Strong-Name Signer](http://brutaldev.com/post/2013/10/18/NET-Assembly-Strong-Name-Signer) by Werner van Deventer, which provides us with a nice UI as well.

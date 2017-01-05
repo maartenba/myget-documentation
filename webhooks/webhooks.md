@@ -1,4 +1,4 @@
-# Webhooks
+# Web hooks
 
 Web hooks can be used to perform actions based on an event, for example sending out a tweet when a package is pushed or updating an issue tracker when a build succeeds.
 
