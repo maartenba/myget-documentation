@@ -6,7 +6,7 @@
 
 ## Getting started
 * [What is MyGet?](README.md)
-* [Creating a MyGet feed\/repository](creating-a-myget-repository.md)
+* [Creating a MyGet feed (repository)](creating-a-myget-repository.md)
 * [Inviting collaborators to a feed](inviting-collaborators-to-a-feed.md)
 * MyGet gallery
 * Frequently Asked Questions \(FAQ\)
@@ -27,10 +27,10 @@
 * Symbols and sources \(.NET\)
     * Publishing debugger symbols
     * Consuming debugger symbols
-* Chocolatey \(Windows\/machine\)
+* Chocolatey \(Windows - machine\)
     * Connecting to a feed
     * Publishing to MyGet
-* PowerShell \(Windows\/machine\)
+* PowerShell \(Windows - machine\)
     * Connecting to a feed
     * Publishing a PowerShell Module to MyGet
 * NPM \(Node.js\)
@@ -58,7 +58,9 @@
 * Working with upstream package sources
     * As a package proxy
     * As a staging area \(push upstream\)
-* Keeping projects up-to-date \(auto-update packages \/ notifications\)
+* Keeping projects up-to-date
+    * Auto-updating packages
+	* Getting package update notifications
 * Analyzing open-source licenses
 * Package vulnerabilities
 * Working with web hooks
