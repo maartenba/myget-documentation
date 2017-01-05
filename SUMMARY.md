@@ -118,9 +118,9 @@
     * [SMTP settings](myget-enterprise/management-dashboard.md#smtp-settings)
     * [Default quota](myget-enterprise/management-dashboard.md#default-quota)
 * Identity providers
-    * [ADFS integration]](myget-enterprise/adfs-integration.md)
-    * [Azure AD Integration]](myget-enterprise/azure-ad-integration.md)
-    * [Okta integration]](myget-enterprise/okta-integration.md)
+    * [ADFS integration](myget-enterprise/adfs-integration.md)
+    * [Azure AD Integration](myget-enterprise/azure-ad-integration.md)
+    * [Okta integration](myget-enterprise/okta-integration.md)
 
 ## Reference
 * Capturing traffic with Fiddler
