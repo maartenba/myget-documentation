@@ -1,0 +1,20 @@
+{
+  "plugins": [
+    "theme-api"
+  ],
+  "pluginsConfig": {
+    "theme-api": {
+      "languages": [
+        {
+          "lang": "csharp",
+          "name": "C#",
+          "default": true
+        },
+        {
+          "lang": "js",
+          "name": "JavaScript"
+        }
+      ]
+    }
+  }
+}
