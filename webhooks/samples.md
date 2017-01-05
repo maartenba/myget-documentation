@@ -8,4 +8,14 @@ Theory is nice, but it's always good to see some practical samples of implementi
 
 ## Implementing custom package retention using webhooks
 
+MyGet offers [retention policies](todo) that run whenever a package is added to a feed.
+
+<p class="alert alert-info">
+<strong>Note:</strong> Core for this example is <a href="https://github.com/MyGet/webhooks-custom-retention">available on GitHub</a>.
+</p>
+
 ## Automatically strong name signing NuGet packages
+
+<p class="alert alert-info">
+<strong>Note:</strong> Core for this example is <a href="https://github.com/MyGet/webhooks-sign-package">available on GitHub</a>.
+</p>
