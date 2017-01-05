@@ -10,7 +10,7 @@ Many companies make use of single sign-on providers like [Okta](http://www.okta.
 
 From the Okta administration, use the top menu and navigate to _Applications_. Use the search box to create a new app and search for `Template App`. We will use this template to configure MyGet as an application with Okta.
 
-![Add template app](Images/okta-add-template-app.png)
+![Add template app](assets/okta-add-template-app.png)
 
 ## 2. Configure the MyGet application
 
@@ -22,7 +22,7 @@ The application should be configured with the following parameters:
 * **Username parameter**: Enter `Username`.
 * **Password parameter**: Enter `Password`.
 
-![Okta application configuration](Images/okta-app-config.png)
+![Okta application configuration](assets/okta-app-config.png)
 
 ## 3. Assign users
 
@@ -32,7 +32,7 @@ In Okta, assign users to MyGet. All users assigned to MyGet will get single sign
 
 Using the Okta browser plugin or Okta's unique application URL for MyGet, sign in. The first login, Okta will ask for MyGet credentials which should be used for the user. The user can either enter existing MyGet credentials, or enter a username/password combination of choice to create a new user.
 
-![Okta first login](Images/okta-first.png)
+![Okta first login](assets/okta-first.png)
 
 <p class="alert alert-info">
     <strong>Note:</strong> The first login to MyGet will ask for additional profile details such as e-mail address and so forth. Every user will have to provide these details once.
