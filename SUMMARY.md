@@ -85,17 +85,27 @@
     * Using VSTS Git with MyGet Build Services
 
 ## Web hooks
-* What are web hooks?
-* HTTP POST web hooks
+* [What are web hooks?](webhooks/webhooks.md)
+* [HTTP POST web hooks](webhooks/webhooks.md#http-post-webhook)
+    * Events
+	    * [Ping](webhooks/webhooks.md#ping)
+	    * [Package added](webhooks/webhooks.md#package-added)
+	    * [Package deleted](webhooks/webhooks.md#package-deleted)
+	    * [Package listed/unlisted](webhooks/webhooks.md#package-listed-unlisted)
+	    * [Package pinned/unpinned](webhooks/webhooks.md#package-pinned-unpinned)
+	    * [Package pushed](webhooks/webhooks.md#package-pushed)
+	    * [Build queued](webhooks/webhooks.md#build-queued)
+	    * [Build started](webhooks/webhooks.md#build-started)
+	    * [Build finished](webhooks/webhooks.md#build-finished)
     * Samples
         * Samples from blog
         * ASP.NET Web API web hook receiver
-* Service-specific webhooks
-    * Email webhook
-    * HipChat webhook
-    * Slack webhook
-    * Twilio
-    * Twitter
+* [Service-specific webhooks](webhooks/webhooks.md#service-specific-webhooks)
+    * [Email webhook](webhooks/webhooks.md#email-webhook)
+    * [HipChat webhook](webhooks/webhooks.md#hipchat-webhook)
+    * [Slack webhook](webhooks/webhooks.md#slack-webhook)
+    * [Twilio](webhooks/webhooks.md#twilio-webhook)
+    * [Twitter](webhooks/webhooks.md#twitter-webhook)
 
 ## Enterprise
 * [Management dashboard](myget-enterprise/management-dashboard.md)
