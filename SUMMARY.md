@@ -5,7 +5,7 @@
 
 ## Getting started
 * [What is MyGet?](README.md)
-* [Creating a MyGet repository](creating-a-myget-repository.md)
+* [Creating a MyGet feed/repository](creating-a-myget-repository.md)
 * [Inviting collaborators to a feed](inviting-collaborators-to-a-feed.md)
 * MyGet gallery
 * Frequently Asked Questions \(FAQ\)
@@ -99,6 +99,24 @@
 
 ## Enterprise
 * [Management dashboard](myget-enterprise/management-dashboard.md)
+    * [Statistics](myget-enterprise/management-dashboard.md#statistics)
+    * [Accounts](myget-enterprise/management-dashboard.md#accounts)
+		* [Registration](myget-enterprise/management-dashboard.md#registration)
+        * [IP security](myget-enterprise/management-dashboard.md#ip-security)
+        * [Login](myget-enterprise/management-dashboard.md#registration-and-login)
+        * [Passwords](myget-enterprise/management-dashboard.md#passwords)
+        * [Lockout](myget-enterprise/management-dashboard.md#lockout)
+        * [Sessions](myget-enterprise/management-dashboard.md#sessions)
+        * [Feed creation](myget-enterprise/management-dashboard.md#feed-creation)
+    * [Users](myget-enterprise/management-dashboard.md#users)
+        * [Creating a user](myget-enterprise/management-dashboard.md#creating-a-user)
+        * [Deleting a user](myget-enterprise/management-dashboard.md#deleting-a-user)
+        * [Manging user quota](myget-enterprise/management-dashboard.md#managing-user-quota)
+    * [Feeds](myget-enterprise/management-dashboard.md#feeds)
+    * [Analytics](myget-enterprise/management-dashboard.md#analytics)
+    * [Gallery](myget-enterprise/management-dashboard.md#gallery)
+    * [SMTP settings](myget-enterprise/management-dashboard.md#smtp-settings)
+    * [Default quota](myget-enterprise/management-dashboard.md#default-quota)
 * Identity providers
     * [ADFS integration]](myget-enterprise/adfs-integration.md)
     * [Azure AD Integration]](myget-enterprise/azure-ad-integration.md)
