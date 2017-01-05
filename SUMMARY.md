@@ -98,8 +98,8 @@
 	    * [Build started](webhooks/webhooks.md#build-started)
 	    * [Build finished](webhooks/webhooks.md#build-finished)
     * Samples
-        * Samples from blog
-        * ASP.NET Web API web hook receiver
+        * TODO Samples from blog
+        * TODO ASP.NET Web API web hook receiver
 * [Service-specific webhooks](webhooks/webhooks.md#service-specific-webhooks)
     * [Email webhook](webhooks/webhooks.md#email-webhook)
     * [HipChat webhook](webhooks/webhooks.md#hipchat-webhook)
@@ -133,10 +133,10 @@
     * [Okta integration](myget-enterprise/okta-integration.md)
 
 ## Reference
-* Capturing traffic with Fiddler
+* [Capturing traffic with Fiddler](reference/capturing-traffic-with-fiddler.md)
 * Feed endpoints
-    * Per package manager
-    * Feed state API
+    * TODO Per package manager
+    * TODO Feed state API
 
 ## Release notes
 * [MyGet 2.2](release-notes/myget-2.2.md)
