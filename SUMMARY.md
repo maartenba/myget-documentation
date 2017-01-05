@@ -99,6 +99,8 @@
         * [Build started](webhooks/webhooks.md#build-started)
         * [Build finished](webhooks/webhooks.md#build-finished)
     * [Samples](webhooks/samples.md)
+	    * [Implementing custom package retention using webhooks](webhooks/samples.md#implementing-custom-package-retention-using-webhooks)
+		* [Automatic strong name signing for NuGet packages](webhooks/samples.md#automatic-strong-name-signing-for-nuget-packages)
 * [Service-specific webhooks](webhooks/webhooks.md#service-specific-webhooks)
     * [Email webhook](webhooks/webhooks.md#email-webhook)
     * [HipChat webhook](webhooks/webhooks.md#hipchat-webhook)
