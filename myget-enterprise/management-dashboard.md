@@ -1,8 +1,8 @@
-# MyGet Enterprise
+# Management dashboard
 
 [MyGet Enterprise](http://www.myget.org/enterprise) contains everything MyGet has to offer, hosted on a dedicated URL for your team. It comes with an additional management dashboard that can be used to manage everything related to the team such as feeds, users, quota, account policies and so forth.
 
-Let's go over the available management options that are available to administrators of the Enterprise account.
+Let's go over the available options that are available to administrators of the Enterprise account through the management dashboard.
 
 ## Statistics
 
@@ -26,9 +26,9 @@ The registration section can be used to whitelist/blacklist e-mail domains. For 
 
 ### IP security
 
-MyGet Enterprise makes it possible to whitelist IP addresses (or IP ranges) so only clients can only access MyGet if they are coming from the configured address. The whitelist will be applied for accessing the website, as well as for consuming hosted NuGet feeds.
+MyGet Enterprise makes it possible to whitelist IP addresses \(or IP ranges\) so only clients can only access MyGet if they are coming from the configured address. The whitelist will be applied for accessing the website, as well as for consuming hosted NuGet feeds.
 
-IP addresses can be entered on separate lines. If an entire subnet has to have access, the IP address can be suffixed with a CIDR suffix (e.g. /24) or a subnet mask (e.g. /255.255.255.0).
+IP addresses can be entered on separate lines. If an entire subnet has to have access, the IP address can be suffixed with a CIDR suffix \(e.g. /24\) or a subnet mask \(e.g. /255.255.255.0\).
 
 ![IP whitelisting](assets/ip-security.png)
 
@@ -36,7 +36,7 @@ IP addresses can be entered on separate lines. If an entire subnet has to have a
 
 The Registration and Login section provides a means of customizing user registration and login.
 
-The text that is shown on the login page (above username/password). For example, a notice could be added on who to contact to get an account.
+The text that is shown on the login page \(above username/password\). For example, a notice could be added on who to contact to get an account.
 
 User registration can be disabled so that Enterprise administrators always have to invite users to the MyGet Enterprise plan.
 
@@ -56,7 +56,7 @@ By default, MyGet closes sessions after 2 hours. If it is required to close a se
 
 Creating feeds can be limited to Enterprise administrators/feed creators. When enabled, non-administrative users will see a message that they should contact an Enterprise administrator in order to create a feed.
 
-Individual users can be assigned the *Administrator* or *Feed creator* role from the user management dashboard.
+Individual users can be assigned the _Administrator_ or _Feed creator_ role from the user management dashboard.
 
 ## Users
 
@@ -76,10 +76,10 @@ When deleting users, it is possible to transfer the user's feeds to a different 
 
 Default quota can be overriden per user. It is possible to specify:
 
-* Allowed # of feeds for the user
-* Allowed # of private feeds for the user
+* Allowed \# of feeds for the user
+* Allowed \# of private feeds for the user
 * Allowed package size
-* Allowed storage per user (over all feeds owned by the user)
+* Allowed storage per user \(over all feeds owned by the user\)
 
 ## Feeds
 
@@ -93,7 +93,7 @@ MyGet Enterprise allows tracking activity using [Google Analytics](http://www.go
 
 It is possible to enable or disable MyGet Gallery. When enabled, users can enlist their feeds in the gallery and make them discoverable for other users and teams. Feeds that are public will also be discoverable to any user outside the team, while feeds that are visible only to users in the Enterprise account will only show up after login.
 
-Optionally, the gallery can also be configured as the default landing page (instead of the login page).
+Optionally, the gallery can also be configured as the default landing page \(instead of the login page\).
 
 ## SMTP settings
 
@@ -105,11 +105,12 @@ Quota for users can be managed individually from the _Users_ page. However, it i
 
 Configurable quota are:
 
-* Allowed # of contributors per feed
-* Allowed # of feeds per user
-* Allowed # of private feeds per user
+* Allowed \# of contributors per feed
+* Allowed \# of feeds per user
+* Allowed \# of private feeds per user
 * Allowed package size
-* Allowed storage per user (over all feeds owned by the user)
+* Allowed storage per user \(over all feeds owned by the user\)
 * Allowed storage per feed
+
 
 
