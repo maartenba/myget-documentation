@@ -98,9 +98,7 @@
         * [Build queued](webhooks/webhooks.md#build-queued)
         * [Build started](webhooks/webhooks.md#build-started)
         * [Build finished](webhooks/webhooks.md#build-finished)
-    * Samples
-        * TODO Samples from blog
-        * TODO ASP.NET Web API web hook receiver
+    * [Samples](webhooks/samples.md)
 * [Service-specific webhooks](webhooks/webhooks.md#service-specific-webhooks)
     * [Email webhook](webhooks/webhooks.md#email-webhook)
     * [HipChat webhook](webhooks/webhooks.md#hipchat-webhook)
