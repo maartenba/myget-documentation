@@ -9,7 +9,7 @@ Many developer teams use MyGet for storing their continuous integration and/or n
 
 By default, MyGet keeps all package versions on a feed. Every package pushed is there forever, unless manually removed or removed by package retention. By setting retention rules, it is possible to automatically trim the list of packages to X latest packages, keeping into account package usage in projects and package dependency trees.
 
-## "Sticky" packages
+## Keeping packages around with pinned packages
 
 Before diving into configuring any package retention policies, you may want to consider which packages you whish to retain. **Certain packages should never be deleted automatically.**
 
