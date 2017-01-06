@@ -5,13 +5,15 @@ As you produce more and more packages, it may become harder to manage all of tho
 Over time though, you may find your feeds to become larger and larger, perhaps even growing beyond the *storage quota* included in your MyGet subscription plan.
 That's why we introduced *package retention* functionality early on ([December, 2012](http://blog.myget.org/post/2012/12/18/Package-retention-policies.aspx)).
 
+Many developer teams use MyGet for storing their continuous integration and/or nightly builds of NuGet, npm, Bower and VSIX packages. As more and more packages get added, it may become harder to manage them all. Some packages may be used in projects, while others are not. Package retention rules can help by automatically deleting older packages, minimizing clutter and doing some housekeeping.
+
+By default, MyGet keeps all package versions on a feed. Every package pushed is there forever, unless manually removed or removed by package retention. By setting retention rules, it is possible to automatically trim the list of packages to X latest packages, keeping into account package usage in projects and package dependency trees.
+
 ## "Sticky" packages
 
-Before diving into configuring any package retention policies, you may want to consider which packages you whish to retain.
-**Certain packages should never be deleted automatically.**
+Before diving into configuring any package retention policies, you may want to consider which packages you whish to retain. **Certain packages should never be deleted automatically.**
 
-Defining which packages you whish to retain can easily be done by *pinning* packages, so they stick around, **even when package retention policies apply**.
-Package retention rules will ignore any pinned packages, to avoid they accidentally get removed during housekeeping.
+Defining which packages you whish to retain can easily be done by *pinning* packages, so they stick around, **even when package retention policies apply**. Package retention rules will ignore any pinned packages, to avoid they accidentally get removed during housekeeping.
 
 From the package details page, you can define which package versions should be retained using the **Pin** button next to the package.
 Alternatively, you can pin all versions at once, all but latest, or only the latest version using the convenient dropdown button at the top of the *Package History* list.
@@ -21,8 +23,7 @@ Of course, you can also **Unpin** packages using the same approach.
 
 ## Defining package retention rules
 
-**By default, we keep all package versions available on your feed.**
-Package retention rules allow you to do some automated housekeeping.
+**By default, we keep all package versions available on your feed.** Package retention rules allow you to do some automated housekeeping.
 
 These rules are **defined per feed**, so you can define different retention policies for different feeds, however you find them suitable to their purpose.
 
