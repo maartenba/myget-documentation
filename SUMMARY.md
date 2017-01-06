@@ -54,7 +54,7 @@
     * Publishing to MyGet
 
 ## How-to
-* Working with retention rules
+* [Working with retention rules](how-to/package-retention-rules.md)
 * Working with upstream package sources
     * As a package proxy
     * As a staging area \(push upstream\)
