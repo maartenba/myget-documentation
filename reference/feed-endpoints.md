@@ -103,6 +103,12 @@ MyGet has the following feed endpoints available for Bower:
 
 * /F/&lt;your-feed-name&gt;/bower - the Bower API endpoint
 
+### Maven-compatible feed endpoints
+
+MyGet has the following feed endpoints available for Maven:
+
+* /F/&lt;your-feed-name&gt;/maven - the Maven API endpoint
+
 ### Vsix-compatible feed endpoints
 
 MyGet has the following feed endpoints available for Vsix (Visual Studio extensions):
