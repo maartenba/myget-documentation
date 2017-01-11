@@ -137,9 +137,25 @@
 
 ## Reference
 * [Capturing traffic with Fiddler](reference/capturing-traffic-with-fiddler.md)
-* Feed endpoints
-    * TODO Per package manager
-    * TODO Feed state API
+* [Feed endpoints](reference/feed-endpoints.md)
+    * Package managers
+        * [NuGet \(.NET\)](reference/feed-endpoints.md#nuget-compatible-feed-endpoints)
+        * [Symbols and sources \(.NET\)](reference/feed-endpoints.md#symbol-server-endpoints)
+        * [Chocolatey \(Windows - machine\)](reference/feed-endpoints.md#nuget-compatible-feed-endpoints)
+        * [PowerShell \(Windows - machine\)](reference/feed-endpoints.md#nuget-compatible-feed-endpoints)
+        * [NPM \(Node.js\)](reference/feed-endpoints.md#npm-compatible-feed-endpoints)
+        * [Bower \(JavaScript\)](reference/feed-endpoints.md#bower-compatible-feed-endpoints)
+        * [Maven \(Java\)](reference/feed-endpoints.md#maven-compatible-feed-endpoints)
+        * [VSIX](reference/feed-endpoints.md#vsix-compatible-feed-endpoints)
+    * Protocol-specific
+        * [NuGet v2/v3](reference/feed-endpoints.md#nuget-compatible-feed-endpoints)
+        * [Symbols and sources](reference/feed-endpoints.md#symbol-server-endpoints)
+        * [NPM](reference/feed-endpoints.md#npm-compatible-feed-endpoints)
+        * [Bower](reference/feed-endpoints.md#bower-compatible-feed-endpoints)
+        * [Maven](reference/feed-endpoints.md#maven-compatible-feed-endpoints)
+        * [VSIX](reference/feed-endpoints.md#vsix-compatible-feed-endpoints)
+    * [Private feed endpoints & authentication](reference/feed-endpoints.md#private-feed-endpoints-and-authentication)
+    * [Feed State API](reference/feed-state-api-endpoint.md)
 
 ## Release notes
 * [MyGet 2.2](release-notes/myget-2.2.md)
