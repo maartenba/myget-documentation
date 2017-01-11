@@ -63,6 +63,7 @@
 	* Getting package update notifications
 * [Analyzing open-source licenses](how-to/license-analysis.md)
 * [Package vulnerabilities](how-to/package-vulnerabilities.md)
+* Managing access tokens
 * Working with web hooks
 
 ## Build services
