@@ -10,7 +10,7 @@ In order to publish packages onto your MyGet feeds, you'll need to create a MyGe
 
 ## When do packages appear on the feed after pushing them successfully?
 
-Usually, your packages will appear on the feed within a minute. Depending on load and other factors, this could take up to 5 minutes. Very sporadically even longer (this can happen for instance when we are scaling out during burst load scenarios).
+Usually, your packages will appear on the feed within a minute. Depending on load and other factors, this could take up to 5 minutes. Very sporadically even longer (this can happen for instance when we are scaling out during burst load scenarios). The activity log may show the package before it's available for consumption by a package management client.
 
 If you really need your package to be instantly available, it is very likely you should question whether the consuming project really needs a package dependency, versus a project reference. We found in practice that this was often the case.
 
