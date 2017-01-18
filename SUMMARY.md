@@ -12,7 +12,7 @@
 * [Frequently Asked Questions \(FAQ\)](frequently-asked-questions-faq.md)
 
 ## Package managers
-* [NuGet \(.NET\)](nuget-net.md)
+* NuGet \(.NET\)
     * Connecting to a NuGet feed
         * Credential Provider for Visual Studio
     * Creating NuGet packages + .NET core
@@ -34,10 +34,10 @@
     * Connecting to a feed
     * Publishing a PowerShell Module to MyGet
 * NPM \(Node.js\)
-    * [Connecting to a NPM feed](connecting-to-a-npm-feed.md)
-    * [Creating NPM packages](creating-npm-packages.md)
+    * Connecting to a NPM feed
+    * Creating NPM packages
     * Publishing to MyGet
-    * [Scoped packages](scoped-packages.md)
+    * Scoped packages
 * Bower \(JavaScript\)
     * Connecting to a Bower feed
     * Creating Bower packages
