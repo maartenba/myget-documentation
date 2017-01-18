@@ -13,3 +13,13 @@ MyGet repositories can contain your own libraries, artifacts as well as third pa
 Audit dependencies used by your organization. Support your release process with configurable upstream package sources, versioning rules, package filters and staged dependencies.
 
 No need to distract your DevOps teams with setting up yet another range of development-critical servers. Focus on your core-business and let MyGet’s experts handle it for you!  Our most experienced cloud engineers ensure an up-to-date, highly available, scalable, and performant service, securely accessible from wherever you are. Our expertise also ensures your service will always be up to date and compatible with the latest evolutions in package manager protocols, ensuring you can always benefit from the latest and greatest client upgrades.
+
+## Stay in touch
+
+Want to stay in touch? [Subscribe to our newsletter](https://azug.us2.list-manage.com/subscribe/post?u=47e1708de98684b0f393d63b3&id=7e46fdf709) and be among the first to know about upcoming features, tips and tricks and news around MyGet!
+
+Other channels to stay in touch:
+
+* The [MyGet blog](http://blog.myget.org), where we post updates on features, how-to's, ...
+* Our [@MyGetTeam Twitter](https://www.twitter.com/mygetteam) where we post short bits of information, as well as status updates
+* Our [UserVoice](https://myget.uservoice.com), where feature requests can be discussed
