@@ -6,10 +6,10 @@
 
 ## Getting started
 * [What is MyGet?](README.md)
-* [Creating a MyGet feed (repository)](creating-a-myget-repository.md)
+* [Creating a MyGet feed \(repository\)](creating-a-myget-repository.md)
 * [Inviting collaborators to a feed](inviting-collaborators-to-a-feed.md)
-* MyGet gallery
-* Frequently Asked Questions \(FAQ\)
+* [MyGet gallery](myget-gallery.md)
+* [Frequently Asked Questions \(FAQ\)](frequently-asked-questions-faq.md)
 
 ## Package managers
 * NuGet \(.NET\)
@@ -55,12 +55,12 @@
 
 ## How-to
 * [Working with retention rules](how-to/package-retention-rules.md)
-* Working with upstream package sources
+* [Working with upstream package sources](working-with-upstream-package-sources.md)
     * As a package proxy
     * As a staging area \(push upstream\)
-* Keeping projects up-to-date
+* [Keeping projects up-to-date](keeping-projects-up-to-date.md)
     * Auto-updating packages
-	* Getting package update notifications
+    * Getting package update notifications
 * [Analyzing open-source licenses](how-to/license-analysis.md)
 * [Package vulnerabilities](how-to/package-vulnerabilities.md)
 * Managing access tokens
@@ -102,8 +102,8 @@
         * [Build started](webhooks/webhooks.md#build-started)
         * [Build finished](webhooks/webhooks.md#build-finished)
     * [Samples](webhooks/samples.md)
-	    * [Implementing custom package retention using webhooks](webhooks/samples.md#implementing-custom-package-retention-using-webhooks)
-		* [Automatic strong name signing for NuGet packages](webhooks/samples.md#automatic-strong-name-signing-for-nuget-packages)
+        * [Implementing custom package retention using webhooks](webhooks/samples.md#implementing-custom-package-retention-using-webhooks)
+        * [Automatic strong name signing for NuGet packages](webhooks/samples.md#automatic-strong-name-signing-for-nuget-packages)
 * [Service-specific webhooks](webhooks/webhooks.md#service-specific-webhooks)
     * [Email webhook](webhooks/webhooks.md#email-webhook)
     * [HipChat webhook](webhooks/webhooks.md#hipchat-webhook)
@@ -149,7 +149,7 @@
         * [Maven \(Java\)](reference/feed-endpoints.md#maven-compatible-feed-endpoints)
         * [VSIX](reference/feed-endpoints.md#vsix-compatible-feed-endpoints)
     * Protocol-specific
-        * [NuGet v2/v3](reference/feed-endpoints.md#nuget-compatible-feed-endpoints)
+        * [NuGet v2\/v3](reference/feed-endpoints.md#nuget-compatible-feed-endpoints)
         * [Symbols and sources](reference/feed-endpoints.md#symbol-server-endpoints)
         * [NPM](reference/feed-endpoints.md#npm-compatible-feed-endpoints)
         * [Bower](reference/feed-endpoints.md#bower-compatible-feed-endpoints)
