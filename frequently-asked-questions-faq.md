@@ -75,7 +75,6 @@ For backwards compatibility with older NuGet clients and Orchard, we also still 
 
 ### Does MyGet support Mono?
 
-As long as NuGet.Core and the NuGet CLI support Mono, we'll do the same.
+As long as NuGet and the NuGet CLI support Mono, we'll do the same.
 
-The command-line application (*nuget.exe*) builds and runs under Mono and allows you to create packages in Mono.
-This is especially true for Mono on Windows, but there are some known issues for Mono on 
+The command-line application (*nuget.exe*) builds and runs under Mono and allows you to create packages in Mono. This is especially true for Mono on Windows, but there are some known issues for Mono on Linux.
