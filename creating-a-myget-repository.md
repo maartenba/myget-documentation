@@ -1,4 +1,8 @@
 Explain how-to + type of feeds
 
-This is where I write useful stuff \(just testing the editor\). 
+#Creating a MyGet Feed
+
+After logging in for the first time, you arrive at the CreateFeed form:
+
+![](/assets/CreateFeedForm.PNG)
 

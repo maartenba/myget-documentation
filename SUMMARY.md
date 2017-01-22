@@ -24,10 +24,10 @@
         * Package not found during package restore
         * Using Paket with MyGet feeds
         * Packaging FSharp
-* Symbols and sources \(.NET\)
+* [Symbols and sources \(.NET\)](symbols-and-sources-net.md)
     * Publishing debugger symbols
     * Consuming debugger symbols
-* Chocolatey \(Windows - machine\)
+* [Chocolatey \(Windows - machine\)](chocolatey-windows---machine.md)
     * Connecting to a feed
     * Publishing to MyGet
 * PowerShell \(Windows - machine\)
