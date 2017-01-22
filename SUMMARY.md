@@ -34,10 +34,10 @@
     * Connecting to a feed
     * Publishing a PowerShell Module to MyGet
 * NPM \(Node.js\)
-    * [Connecting to a NPM feed](connecting-to-a-npm-feed.md)
-    * [Creating NPM packages](creating-npm-packages.md)
+    * Connecting to a NPM feed
+    * Creating NPM packages
     * Publishing to MyGet
-    * [Scoped packages](scoped-packages.md)
+    * Scoped packages
 * Bower \(JavaScript\)
     * Connecting to a Bower feed
     * Creating Bower packages
@@ -55,10 +55,10 @@
 
 ## How-to
 * [Working with retention rules](how-to/package-retention-rules.md)
-* [Working with upstream package sources](working-with-upstream-package-sources.md)
+* Working with upstream package sources
     * As a package proxy
     * As a staging area \(push upstream\)
-* [Keeping projects up-to-date](keeping-projects-up-to-date.md)
+* Keeping projects up-to-date
     * Auto-updating packages
     * Getting package update notifications
 * [Analyzing open-source licenses](how-to/license-analysis.md)
