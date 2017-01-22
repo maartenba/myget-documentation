@@ -55,10 +55,10 @@
 
 ## How-to
 * [Working with retention rules](how-to/package-retention-rules.md)
-* Working with upstream package sources
+* [Working with upstream package sources](how-to/working-with-upstream-package-sources.md)
     * As a package proxy
     * As a staging area \(push upstream\)
-* Keeping projects up-to-date
+* [Keeping projects up-to-date](how-to/keeping-projects-up-to-date.md)
     * Auto-updating packages
     * Getting package update notifications
 * [Analyzing open-source licenses](how-to/license-analysis.md)
