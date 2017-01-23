@@ -1,6 +1,6 @@
 # NuGet \(.NET\)
 
-TODO
+TODO (inspiration: http://docs.myget.org/docs/walkthrough/getting-started-with-nuget)
 
 ## Connecting to a NuGet feed
 

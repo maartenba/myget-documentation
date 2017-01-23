@@ -1,6 +1,6 @@
 # Maven \(Java\)
 
-TODO
+TODO http://docs.myget.org/docs/walkthrough/getting-started-with-maven
 
 ## Connecting to a Maven feed
 

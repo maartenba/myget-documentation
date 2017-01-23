@@ -1,6 +1,6 @@
 # NPM \(Node.js\)
 
-TODO
+TODO (inspiration on http://docs.myget.org/docs/walkthrough/getting-started-with-npm *and* http://docs.myget.org/docs/reference/myget-npm-support)
 
 ## Connecting to a NPM feed
 
