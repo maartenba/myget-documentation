@@ -48,7 +48,7 @@
         * Gradle
     * Creating Maven packages \(+ very short intro to build services\)
     * Publishing to MyGet
-* [VSIX](package-managers/vsix-visual-studio-extensions.md)
+* [VSIX](package-managers/vsix.md)
     * Connecting to a VSIX feed
     * Creating VSIX packages \(+ very short intro to build services\)
     * Publishing to MyGet
