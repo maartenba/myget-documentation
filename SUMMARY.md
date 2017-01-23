@@ -25,8 +25,9 @@
         * Using Paket with MyGet feeds
         * Packaging FSharp
 * [Symbols and sources \(.NET\)](package-managers/symbols-and-sources.md)
-    * Publishing debugger symbols
-    * Consuming debugger symbols
+    * [Publishing debugger symbols](package-managers/symbols-and-sources.md#publishing-debugger-symbols)
+    * [Consuming debugger symbols](package-managers/symbols-and-sources.md#consuming-debugger-symbols)
+    * [Troubleshooting](package-managers/symbols-and-sources.md#troubleshooting)
 * [Chocolatey \(Windows - machine\)](package-managers/chocolatey.md)
     * Connecting to a feed
     * Publishing to MyGet
