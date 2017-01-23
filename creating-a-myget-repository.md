@@ -2,7 +2,7 @@
 
 After logging in for the first time, we can create a new feed \(repository\). All we'll need to provide is a feed name, description and its scope.
 
-![](/assets/CreateFeedForm.PNG)
+![Create a MyGet feed](assets/create-myget-feed.png)
 
 ## Feed name
 
@@ -16,7 +16,7 @@ Naming things can be hard. It might be helpful to know at this stage:
 
 The feed description is for your benefit. It is displayed on the Feed Details page. When a feed is published to the gallery, the feed description is also used there to provide a short description of what is on this feed.
 
-## Feed Scope
+## Feed scope
 
 ### Public feed
 
@@ -30,9 +30,10 @@ A community feed can also be discovered and consumed by anyone. Anyone can add p
 
 Only you have access, and those people you specifically invite to consume your private feed. Private feeds are only available to paying subscribers - after the 14-day free trial. There are limitations on the number of contributors who can add to a private feed.
 
-# What Happens Next?
+# What happens next?
 
 When you click the `Create feed` button, your feed is set up, and you're taken to the next screen to add packages:
 
-![](/assets/AfterFeedCreated.png)
+![New feed was created](assets/new-feed-created.png)
 
+From here on, we can ....
