@@ -20,9 +20,9 @@ The feed description is for your benefit. It is displayed on the Feed Details pa
 
 Depending on how the feed will be used, we can pick the scope:
 
-* **Public feed **- A public feed can be discovered and consumed by anyone. Only you \(or people you grant privileges to\) can add packages to it.
-* **Community feed** - A community feed can also be discovered and consumed by anyone. Anyone can add their own packages to it.
-* **Private feed **- Only you have access, and those people you specifically invite to consume your private feed. Private feeds are only available to paying subscribers. There are limitations on the number of contributors who can add to a private feed.
+* **Public feed **- A public feed can be discovered and consumed by anyone. Only you \(or people you grant privileges to\) can add packages to it. This type of feed is perfect if you want to share packages with other people without them requiring a MyGet login. Open-source projects or public SDK's can be distributed on a public feed.
+* **Community feed** - A community feed can also be discovered and consumed by anyone. Anyone can add their own packages to it. This type of feed is like a public feed, except that other people can contribute to it - a bit like a mini NuGet.org or Maven Central.
+* **Private feed **- Only you have access, and those people you specifically invite to consume your private feed. Private feeds are only available to paying subscribers. There are limitations on the number of contributors who can add to a private feed. This feed type is ideally suited to share packages with team members or customers in a secure way.
 
 Once we provide these details, we can create the feed by clicking the **Create feed** button. Our feed will be created and we can start adding packages or invite other people to collaborate.
 
