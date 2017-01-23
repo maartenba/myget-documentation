@@ -17,13 +17,13 @@
         * Credential Provider for Visual Studio
     * Creating NuGet/.NET Core packages
     * Publishing to MyGet
+	* [Troubleshooting](package-managers/nuget.md#troubleshooting)
     * Tips and tricks
-        * Migrating to MyGet
-        * Consume a private feed in TeamCity
-        * NuGet configuration inheritance
-        * Package not found during package restore
-        * Using Paket with MyGet feeds
-        * Packaging FSharp
+        * [Migrating to MyGet](package-managers/tips-tricks/migrating-to-myget.md)
+        * [Consume a private feed in TeamCity](package-managers/tips-tricks/consume-a-private-feed-in-teamcity.md)
+        * [NuGet configuration inheritance](package-managers/tips-tricks/nuget-configuration-inheritance.md)
+        * [Using Paket with MyGet](package-managers/tips-tricks/using-paket-with-myget.md)
+        * [Packaging FSharp](package-managers/tips-tricks/packaging-fsharp.md)
 * [Symbols and sources \(.NET\)](package-managers/symbols-and-sources.md)
     * [Publishing debugger symbols](package-managers/symbols-and-sources.md#publishing-debugger-symbols)
     * [Consuming debugger symbols](package-managers/symbols-and-sources.md#consuming-debugger-symbols)
