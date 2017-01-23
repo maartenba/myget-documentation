@@ -7,12 +7,12 @@
 ## Getting started
 * [What is MyGet?](README.md)
 * [Creating a MyGet feed \(repository\)](creating-a-myget-repository.md)
-* [Inviting collaborators to a feed](inviting-collaborators-to-a-feed.md)
+* [Inviting users to a feed](inviting-users-to-a-feed.md)
 * [MyGet gallery](myget-gallery.md)
 * [Frequently Asked Questions \(FAQ\)](frequently-asked-questions-faq.md)
 
 ## Package managers
-* NuGet \(.NET\)
+* [NuGet \(.NET\)](package-managers/nuget.md)
     * Connecting to a NuGet feed
         * Credential Provider for Visual Studio
     * Creating NuGet packages + .NET core
@@ -24,41 +24,41 @@
         * Package not found during package restore
         * Using Paket with MyGet feeds
         * Packaging FSharp
-* [Symbols and sources \(.NET\)](symbols-and-sources-net.md)
+* [Symbols and sources \(.NET\)](package-managers/symbols-and-sources.md)
     * Publishing debugger symbols
     * Consuming debugger symbols
-* [Chocolatey \(Windows - machine\)](chocolatey-windows---machine.md)
+* [Chocolatey \(Windows - machine\)](package-managers/chocolatey.md)
     * Connecting to a feed
     * Publishing to MyGet
-* PowerShell \(Windows - machine\)
+* [PowerShell \(Windows - machine\)](package-managers/powershell.md)
     * Connecting to a feed
     * Publishing a PowerShell Module to MyGet
-* NPM \(Node.js\)
-    * [Connecting to a NPM feed](connecting-to-a-npm-feed.md)
-    * [Creating NPM packages](creating-npm-packages.md)
+* [NPM \(Node.js\)](package-managers/npm.md)
+    * Connecting to a NPM feed
+    * Creating NPM packages
     * Publishing to MyGet
-    * [Scoped packages](scoped-packages.md)
-* Bower \(JavaScript\)
+    * Scoped packages
+* [Bower \(JavaScript\)](package-managers/bower.md)
     * Connecting to a Bower feed
     * Creating Bower packages
     * Publishing to MyGet
-* Maven \(Java\)
+* [Maven \(Java\)](package-managers/maven.md)
     * Connecting to a Maven feed
         * Maven
         * Gradle
     * Creating Maven packages \(+ very short intro to build services\)
     * Publishing to MyGet
-* VSIX
+* [VSIX](package-managers/vsix-visual-studio-extensions.md)
     * Connecting to a VSIX feed
     * Creating VSIX packages \(+ very short intro to build services\)
     * Publishing to MyGet
 
 ## How-to
 * [Working with retention rules](how-to/package-retention-rules.md)
-* [Working with upstream package sources](working-with-upstream-package-sources.md)
+* Working with upstream package sources
     * As a package proxy
     * As a staging area \(push upstream\)
-* [Keeping projects up-to-date](keeping-projects-up-to-date.md)
+* Keeping projects up-to-date
     * Auto-updating packages
     * Getting package update notifications
 * [Analyzing open-source licenses](how-to/license-analysis.md)
