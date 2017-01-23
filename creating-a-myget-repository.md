@@ -1,5 +1,3 @@
-Explain how-to + type of feeds
-
 #Creating a MyGet Feed
 
 After logging in for the first time, you arrive at the CreateFeed form. It's simple. You only need: 
@@ -25,7 +23,17 @@ The description is for your benefit. It is only displayed on the Feed Details pa
 
 ## Feed Scope
 
-Public, community or private, as explained on the form. (Note that private feeds are only available to paying subscribers - after the 14-day free trial.)
+### Public feed
+
+A public feed can be discovered and consumed by anyone. Only you can add packages to it. 
+
+### Community feed
+
+A community feed can also be discovered and consumed by anyone. Anyone can add packages to it. 
+
+### Private feed
+
+Only you have access, and those people you specifically invite to consume your private feed. Private feeds are only available to paying subscribers - after the 14-day free trial. There are limitations on the number of contributors who can add to a private feed. 
 
 # What Happens Next?
 
