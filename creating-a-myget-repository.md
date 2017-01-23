@@ -14,9 +14,10 @@ After logging in for the first time, you arrive at the CreateFeed form. It's sim
 ## Feed Name
 
 Naming things can be hard. It might be helpful to know at this stage:
-* Your feed names are yours - they are prefixed with your username to make them unique. 
-* If you change your mind about the feed name, you can delete your feed and start over. (However, this isn't so good when you've already added packages to the feed.)
-* While there isn't a _Rename feed_ function, you can accomplish the same thing via the _Clone feed_ feature - even for a feed containing packages. 
+
+ 1. Your feed names are yours - they are prefixed with your username to make them unique. 
+ 2. If you change your mind about the feed name, you can delete your feed and start over. However, this is not a satisfactory option when you've already added many packages to the feed - you'd have to add them all again. (See the next point.)
+ 3. While there isn't a _Rename feed_ function, you can accomplish the same thing via the _Clone feed_ feature - even for a feed containing packages. 
 
 ## Feed Description
 
