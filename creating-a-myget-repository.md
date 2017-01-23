@@ -26,3 +26,8 @@ The description is for your benefit. It is only displayed on the Feed Details pa
 
 Public, community or private, as explained on the form. (Note that private feeds are only available to paying subscribers - after the 14-day free trial.)
 
+# What Happens Next?
+
+When you click the `Create feed` button, your feed is set up, and you're taken to the next screen to add packages:
+
+![](/assets/AfterFeedCreated.png)
