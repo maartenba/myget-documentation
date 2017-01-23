@@ -15,7 +15,7 @@
 * [NuGet \(.NET\)](package-managers/nuget.md)
     * Connecting to a NuGet feed
         * Credential Provider for Visual Studio
-    * Creating NuGet packages + .NET core
+    * Creating NuGet/.NET Core packages
     * Publishing to MyGet
     * Tips and tricks
         * Migrating to MyGet
