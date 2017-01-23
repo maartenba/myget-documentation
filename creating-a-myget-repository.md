@@ -18,22 +18,13 @@ The feed description is for your benefit. It is displayed on the Feed Details pa
 
 ## Feed scope
 
-### Public feed
+Depending on how the feed will be used, we can pick the scope:
 
-A public feed can be discovered and consumed by anyone. Only you can add packages to it.
+* **Public feed **- A public feed can be discovered and consumed by anyone. Only you \(or people you grant privileges to\) can add packages to it.
+* **Community feed** - A community feed can also be discovered and consumed by anyone. Anyone can add their own packages to it.
+* **Private feed **- Only you have access, and those people you specifically invite to consume your private feed. Private feeds are only available to paying subscribers. There are limitations on the number of contributors who can add to a private feed.
 
-### Community feed
-
-A community feed can also be discovered and consumed by anyone. Anyone can add packages to it.
-
-### Private feed
-
-Only you have access, and those people you specifically invite to consume your private feed. Private feeds are only available to paying subscribers - after the 14-day free trial. There are limitations on the number of contributors who can add to a private feed.
-
-# What happens next?
-
-When you click the `Create feed` button, your feed is set up, and you're taken to the next screen to add packages:
+Once we provide these details, we can create the feed by clicking the **Create feed** button. Our feed will be created and we can start adding packages or invite other people to collaborate.
 
 ![New feed was created](assets/new-feed-created.png)
 
-From here on, we can ....
