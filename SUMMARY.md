@@ -109,6 +109,7 @@
     * [Email webhook](webhooks/webhooks.md#email-webhook)
     * [HipChat webhook](webhooks/webhooks.md#hipchat-webhook)
     * [Slack webhook](webhooks/webhooks.md#slack-webhook)
+    * [Microsoft Teams webhook](webhooks/webhooks.md#microsoft-teams-webhook)
     * [Twilio](webhooks/webhooks.md#twilio-webhook)
     * [Twitter](webhooks/webhooks.md#twitter-webhook)
 
