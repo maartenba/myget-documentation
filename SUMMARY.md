@@ -67,22 +67,22 @@
 * TODO [Managing access tokens](how-to/access-tokens.md)
 
 ## Build services
-* What are build services?
-* Convention-based builds
+* TODO What are build services?
+* TODO Convention-based builds
     * For NuGet
     * For NPM
     * For VSIX
-* Build scripts
+* TODO Build scripts
     * Example build script 1
     * Example build script 2
     * Example build script 3
-* Trigger builds automatically
+* TODO Trigger builds automatically
     * GitHub webhook
     * BitBucket webhook
     * VSTS webhook
     * GitLab webhook
     * Generic webhook
-* Tips and tricks
+* TODO Tips and tricks
     * Using NuGet command-line in build scripts
     * Using psake in build scripts
     * Building Chocolatey packages
