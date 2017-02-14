@@ -6,6 +6,7 @@
 * [Inviting users to a feed](inviting-users-to-a-feed.md)
     * [Managing user permissions](inviting-users-to-a-feed.md#managing-user-permissions)
     * [Available feed privileges](inviting-users-to-a-feed.md#available-feed-privileges)
+	* [Feed ownership and co-owners](inviting-users-to-a-feed.md#feed-ownership-and-co-owners)
 * [MyGet gallery](myget-gallery.md)
 * [Frequently Asked Questions \(FAQ\)](frequently-asked-questions-faq.md)
 
