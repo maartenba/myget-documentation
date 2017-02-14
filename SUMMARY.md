@@ -61,6 +61,8 @@
 * [Analyzing open-source licenses](how-to/license-analysis.md)
 * [Package vulnerabilities](how-to/package-vulnerabilities.md)
 * [Managing access tokens](how-to/access-tokens.md)
+    * [Editing access tokens](how-to/access-tokens.md#editing-access-tokens)
+    * [Scoped access tokens](how-to/access-tokens.md#scoped-access-tokens)
 
 ## Build services
 * TODO What are build services?
