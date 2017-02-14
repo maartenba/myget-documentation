@@ -2,38 +2,33 @@
 
 After creating a MyGet feed (repository), we can invite other users to it. Depending on the assigned privileges, others can then contribute to development of packages on the feed or simply consume packages.
 
-## Inviting other users to your feed
-
 MyGet features a rich security model around your feeds. As a feed owner, we always have the richest set of permissions possible. We can assign privileges to specific users on MyGet using their email address or username.
+
+## Inviting other users to your feed
 
 In order to give other users a certain privilege on your feed, they have to be invited to your MyGet feed. This can be done in the *Feed security* tab for our feed. This tab lists all users that currently have access to our feed as well as a list of &quot;pending&quot; invitations, that is: users that have been invited to our feed but haven’t confirmed yet.
 
 ![The Feed security tab which enables you to assign specific privileges to other users](assets/myget_feed_security_tab.png)
 
-The *Add feed privileges...* button will open a dialog and allows you to invite a user to your feed by entering his e-mail address. You can immediately assign the correct privilege to this user to ensure the correct privilege will be assigned once the user confirms the invitation.
-
-Below you can see an example invitation for a user to whom, once the invitation is confirmed, the <i>&quot;can consume this feed&quot;</i> privilege will be assigned.
+The *Add feed privileges...* button will open a dialog and allows us to invite a user to your feed by entering his e-mail address. You can immediately assign the correct privilege to this user to ensure the correct privilege will be assigned once the user confirms the invitation.
 
 ![Inviting other users to a feed and assigning them a specific privilege](assets/myget_feed_security_popup.png)
 
-Once you've clicked the *Add user* button, an e-mail will be sent to the e-mail address provided. The user being added to your feed will receive this e-mail and can choose to claim the privileges you’ve assigned or to simply ignore the invitation.
+If the user exists on MyGet, privileges are assigned immediately. If the user has no MyGet account, an invitation e-mail will be sent to the e-mail address provided. When the invitation is accepted, the user will be granted access to our feed with the privileges chosen in the *Add feed privileges* dialog.
 
-Once the user confirms this e-mail by clicking the link provided in the e-mail body, the user will be granted access to your feed with the privileges chosen in the *Add feed privileges* dialog.
+## Managing user permissions
 
-## Managing User Permissions
+After inviting a user to our feed, wecan change the privileges previously assigned. For example, a user who could previously only consume packages may now be granted the privilege of contributing packages to our feed. Also, a user who could previously manage all packages on the feed can be locked down into a privilege where they can only consume packages and no longer manage them.
 
-After inviting a user to your feed, you can change the privileges previously assigned. For example, a user who could previously only consume packages may now be granted the privilege of contributing packages to your feed. Also, a user who could previously manage all packages on the feed can be locked down into a privilege where he can only consume packages and no longer manage them.
-
-The *Feed security* tab for your feed lists all users that currently have access to your feed as well as a list of users that have been invited to your feed but haven’t confirmed their privileges yet. The dropdown next to a user’s name allows you to modify the currently assigned privilege.
+The *Feed security* tab for our feed lists all users that currently have access to your feed, as well as a list of users that have been invited to our feed but haven't confirmed their privileges yet. The dropdown next to a user's name allows us to modify the currently assigned privilege.
 
 <p class="alert alert-info">
-    <strong>Note:</strong> When assigning the <i>&quot;Has no access to this feed&quot;</i> privilege to a certain user, the user will be removed from the list of users. If afterwards you want to assign a dfferent privilege to this user, the user should be sent a new invitation using the <strong>Add feed privileges..</strong> button.
+    <strong>Note:</strong> When assigning the <i>&quot;Has no access to this feed&quot;</i> privilege to a certain user, the user will be removed from our feed.
 </p>
 
-## Available Feed Privileges
+## Available feed privileges
 
-Permissions on a MyGet feed can be granted to other users.
-The table below lists all possible permissions and their meaning:
+Permissions on a MyGet feed can be granted to other users. The table below lists all possible permissions and their meaning:
 
 <table class="feedprivileges">
 	<thead>
@@ -66,16 +61,36 @@ The table below lists all possible permissions and their meaning:
         </tr>
         <tr>
             <td>Can manage users and all packages for this feed</td>
-            <td>The user can search, consume and push packages to the feed as well as use the MyGet web site to manage packages and users. It is as good as being a feed owner except that deleting a feed isn't allowed.</td>
+            <td>The user becomes a co-owner of the feed and can search, consume and push packages to the feed as well as use the MyGet web site to manage packages and users. The privilege is essentially the same as being a feed owner except that deleting a feed isn't allowed.</td>
             <td style="text-align:center;vertical-align: middle">yes</td>
         </tr>
         <tr>
             <td>Owns the feed</td>
-            <td>The owns the feed and can perform all operations on it. The user manage feed settings, packages and user privileges.</td>
+            <td>The user owns the feed and can perform all operations on it. The user manage feed settings, packages and user privileges. For private feeds, the feed owner must have an active <a href="https://www.myget.org/plans">MyGet subscription</a>.</td>
             <td style="text-align:center;vertical-align: middle">yes</td>
         </tr>
     </tbody>
 </table>
+
+## Feed ownership and co-owners
+
+
+### Example - A user needs to install packages from our feed
+
+When al
+
+### Example - Making a user co-owner of a feed
+
+### Example - Transferring feed ownership
+
+
+
+
+<p class="alert alert-info">
+    <strong>Note:</strong> When assigning the <i>&quot;Has no access to this feed&quot;</i> privilege to a certain user, the user will be removed from our feed.
+</p>
+
+
 
 ## Adding a new feed owner
 
