@@ -12,7 +12,7 @@
 * [Frequently Asked Questions \(FAQ\)](frequently-asked-questions-faq.md)
 
 ## Package managers
-* [NuGet \(.NET\)](package-managers/nuget.md)
+* TODO [NuGet \(.NET\)](package-managers/nuget.md)
     * Connecting to a NuGet feed
         * Credential Provider for Visual Studio
     * Creating NuGet/.NET Core packages
@@ -28,44 +28,43 @@
     * [Publishing debugger symbols](package-managers/symbols-and-sources.md#publishing-debugger-symbols)
     * [Consuming debugger symbols](package-managers/symbols-and-sources.md#consuming-debugger-symbols)
     * [Troubleshooting](package-managers/symbols-and-sources.md#troubleshooting)
-* [Chocolatey \(Windows - machine\)](package-managers/chocolatey.md)
+* TODO [Chocolatey \(Windows - machine\)](package-managers/chocolatey.md)
     * Connecting to a feed
     * Publishing to MyGet
-* [PowerShell \(Windows - machine\)](package-managers/powershell.md)
+* TODO [PowerShell \(Windows - machine\)](package-managers/powershell.md)
     * Connecting to a feed
     * Publishing a PowerShell Module to MyGet
-* [NPM \(Node.js\)](package-managers/npm.md)
+* TODO [NPM \(Node.js\)](package-managers/npm.md)
     * Connecting to a NPM feed
     * Creating NPM packages
     * Publishing to MyGet
     * Scoped packages
-* [Bower \(JavaScript\)](package-managers/bower.md)
+* TODO [Bower \(JavaScript\)](package-managers/bower.md)
     * Connecting to a Bower feed
     * Creating Bower packages
     * Publishing to MyGet
-* [Maven \(Java\)](package-managers/maven.md)
+* TODO [Maven \(Java\)](package-managers/maven.md)
     * Connecting to a Maven feed
         * Maven
         * Gradle
     * Creating Maven packages \(+ very short intro to build services\)
     * Publishing to MyGet
-* [VSIX](package-managers/vsix.md)
+* TODO [VSIX](package-managers/vsix.md)
     * Connecting to a VSIX feed
     * Creating VSIX packages \(+ very short intro to build services\)
     * Publishing to MyGet
 
 ## How-to
 * [Working with retention rules](how-to/package-retention-rules.md)
-* Working with upstream package sources
-    * As a package proxy
-    * As a staging area \(push upstream\)
-* Keeping projects up-to-date
+* TODO [Working with upstream package sources](how-to/working-with-upstream-package-sources.md)
+    * [As a package proxy](how-to/working-with-upstream-package-sources.md#proxy-upstream-package-source)
+    * [As a staging area \(push upstream\)](how-to/working-with-upstream-package-sources.md#using-a-feed-as-a-staging-area-push-upstream)
+* TODO [Keeping projects up-to-date](how-to/keeping-projects-up-to-date.md)
     * Auto-updating packages
     * Getting package update notifications
 * [Analyzing open-source licenses](how-to/license-analysis.md)
 * [Package vulnerabilities](how-to/package-vulnerabilities.md)
-* Managing access tokens
-* Working with web hooks
+* TODO [Managing access tokens](how-to/access-tokens.md)
 
 ## Build services
 * What are build services?

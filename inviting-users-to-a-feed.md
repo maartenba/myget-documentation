@@ -1,2 +1,2 @@
-Inviting users to a feed
+# Inviting users to a feed
 
