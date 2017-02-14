@@ -4,6 +4,8 @@
 * [What is MyGet?](README.md)
 * [Creating a MyGet feed \(repository\)](creating-a-myget-repository.md)
 * [Inviting users to a feed](inviting-users-to-a-feed.md)
+    * [Managing user permissions](inviting-users-to-a-feed.md#managing-user-permissions)
+    * [Available feed privileges](inviting-users-to-a-feed.md#available-feed-privileges)
 * [MyGet gallery](myget-gallery.md)
 * [Frequently Asked Questions \(FAQ\)](frequently-asked-questions-faq.md)
 
