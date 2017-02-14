@@ -10,13 +10,17 @@ Access tokens can be used for all authentication purposes, except logging into t
 
 Additional access tokens can be generated [from our profile page](https://www.myget.org/profile/Me#!/AccessTokens). The primary API key can be regenerated and new tokens can be easily created or revoked.
 
-![Managing access tokens](assets/access_token_management.fpng)
+![Managing access tokens](assets/access_token_management.png)
 
 Every access token has several attributes that can be attached:
  
 * A short description: this will help keeping track of where you used the access token and revoke it if necessary.
 * A scope: a key can, for example, be scoped to allow access only to a specific feed - limiting the surcace area to which a given access token can push packages.
 * An optional expiration date, after which the token will no longer be valid.
+
+<p class="alert alert-info">
+    <strong>Note:</strong> When editing access tokens, the <em>value</em> of the access token is always hidden by default to prevent others who may be looking at our screen from seeing the access token. The value can be copied to clipboard using the button right next to it, or visualized by clicking it.
+</p>
 
 ## Scoped access tokens
 
