@@ -3,6 +3,15 @@ img {
 	max-width: 800px;
 }
 
+@media only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+	img {
+		max-width: 1200px;
+	}
+}
+
 /* Alerts */
 .alert {
     padding: 8px 35px 8px 14px;
