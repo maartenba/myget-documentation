@@ -1,12 +1,12 @@
 # Inviting users to a feed
 
-TODO
+After creating a MyGet feed (repository), we can invite other users to it. Depending on the assigned privileges, others can then contribute to development of packages on the feed or simply consume packages.
 
 ## Inviting other users to your feed
 
-MyGet features a rich security model around your feeds. You, as a feed owner, always have the richest set of permissions possible. You can assign privileges to specific users on MyGet using their email address or username.
+MyGet features a rich security model around your feeds. As a feed owner, we always have the richest set of permissions possible. We can assign privileges to specific users on MyGet using their email address or username.
 
-In order to give other users a certain privilege on your feed, they have to be invited to your MyGet feed. This can be done in the *Feed security* tab for your feed. This tab lists all users that currently have access to your feed as well as a list of &quot;pending&quot; invitations, that is: users that have been invited to your feed but haven’t confirmed yet.
+In order to give other users a certain privilege on your feed, they have to be invited to your MyGet feed. This can be done in the *Feed security* tab for our feed. This tab lists all users that currently have access to our feed as well as a list of &quot;pending&quot; invitations, that is: users that have been invited to our feed but haven’t confirmed yet.
 
 ![The Feed security tab which enables you to assign specific privileges to other users](assets/myget_feed_security_tab.png)
 
