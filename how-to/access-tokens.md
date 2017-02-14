@@ -24,5 +24,16 @@ Every access token has several attributes that can be attached:
 
 ## Scoped access tokens
 
-TODO
+Many development teams are making use of a continuous integration server like TeamCity, Jenkins or VSTS to build their projects and push generated packages to their MyGet feed. When having multiple feeds, it is a good practice to limit the feeds this access token/API key can push packages to, ensuring the surface area of the specific access token is limited to just the feeds the access token requires access to.
+
+In short, scoped access tokens:
+
+* Are a good security best-practice: use minimum required permissions for a specific operation
+* Avoid services/users accidentally pushing packages by using read-only tokens where possible
+* Allow pushing packages without the ability to get access to other packages on the feed (write-only)
+
+When creating or editing access tokens, we can select whether we want to create a read-only or write-only access token. Write access can also be limited to just one feed.
+
+![Edit access token description, scope, expiration](assets/edit-access-token.png)
+
 
