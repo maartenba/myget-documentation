@@ -18,7 +18,7 @@ There is a basic set of requirements that must be met before we can publish your
 
 Publishing our feed in the MyGet Gallery is easy - the hard work is in ticking the **Yes, list my feed in the Gallery** checkbox on the feed's Gallery settings page.
 
-![Listing a feed in the gallery](assets/gallery_publish_checkbox.png) 
+![Listing a feed in the gallery](assets/gallery_publish_checkbox.png)
  
 Click the **Save** button to update your settings.
 
