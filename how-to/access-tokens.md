@@ -10,7 +10,7 @@ Access tokens can be used for all authentication purposes, except logging into t
 
 Additional access tokens can be generated [from our profile page](https://www.myget.org/profile/Me#!/AccessTokens). The primary API key can be regenerated and new tokens can be easily created or revoked.
 
-![Managing access tokens](assets/access_token_management.png)
+![Managing access tokens](assets/access_token_management.fpng)
 
 Every access token has several attributes that can be attached:
  
