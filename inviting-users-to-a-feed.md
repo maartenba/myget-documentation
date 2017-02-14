@@ -66,7 +66,7 @@ Permissions on a MyGet feed can be granted to other users. The table below lists
         </tr>
         <tr>
             <td>Owns the feed</td>
-            <td>The user owns the feed and can perform all operations on it. The user manage feed settings, packages and user privileges. For private feeds, the feed owner must have an active <a href="https://www.myget.org/plans">MyGet subscription</a>.</td>
+            <td>The user owns the feed and can perform all operations on it. The user manage feed settings, packages and user privileges. For private feeds, the feed owner must have an active, paid <a href="https://www.myget.org/plans">MyGet subscription</a>.</td>
             <td style="text-align:center;vertical-align: middle">yes</td>
         </tr>
     </tbody>
@@ -74,39 +74,15 @@ Permissions on a MyGet feed can be granted to other users. The table below lists
 
 ## Feed ownership and co-owners
 
+A MyGet feed is always owned by a user account. Other users can be assigned co-owner privileges, allowing them to manage feed settings, packages and user privileges.
 
-### Example - A user needs to install packages from our feed
+Before changing feed ownership, consider the following:
 
-When al
+* If the goal is to assign permissions to a user that allow managing feed, packages and users, select the `Can manage users and all packages for this feed` privilege.
+* If the goal is to _transfer_ feed ownership, assign the `Owns the feed` privilege. 
 
-### Example - Making a user co-owner of a feed
+Feed ownership can be changed from the feed's *Feed Security* tab.
 
-### Example - Transferring feed ownership
-
-
-
-
-<p class="alert alert-info">
-    <strong>Note:</strong> When assigning the <i>&quot;Has no access to this feed&quot;</i> privilege to a certain user, the user will be removed from our feed.
+<p class="alert alert-warning">
+    <strong>Warning!</strong> For private feeds, the feed owner must have an active, paid <a href="https://www.myget.org/plans">MyGet subscription</a>. If the user does not have an active, paid subscripton, the feed will become locked and can only be unlocked by contacting support. Always be careful when assigning the <code>Owns the feed</code> permission - very often <code>Can manage users and all packages for this feed</code> is intended.
 </p>
-
-
-
-## Adding a new feed owner
-
-This *how to* describes how to assign a new owner to your feed.
-
-1. Log into MyGet and navigate to the feed that you want to add a new owner to
-2. Select **Feed Security**, located down the left hand side of the page  
-![The MyGet Feed Security Window](assets/feed_security_main_page.png)  
-3. Click the **Add feed privileges...** button
-4. In the **Add Feed Privileges** window, enter the MyGet Username, or the email address of the user, that you would like to assign owner permission of the feed to  
-![Add Feed Privileges Window](assets/feed_security_main_dialog.png)  
-5. In the **Privileges** drop down list select **Owner of this feed**  
-![Available Feed Security Options](assets/feed_security_options.png)  
-6. You will receive the following warning  
-![Add owner warning dialog](assets/feed_security_add_warning.png)  
-This will make the chosen user the owner of the feed, and make you a co-owner.  If you are happy to proceed, click OK  
-7. The new permissions take immediate effect  
-![Successful change of feed owner](assets/feed_security_add_success.png)  
-The new owner will receive an email informing them of the change.  At this point the new owner can choose to reduce your permissions to the feed, or revoke them completely.
