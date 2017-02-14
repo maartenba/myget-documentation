@@ -1,9 +1,5 @@
 # Summary
 
-## Examples for doc writer
-* [Source code](methods.md)
-* [Notes, alerts and callouts](notesalertscallouts.md)
-
 ## Getting started
 * [What is MyGet?](README.md)
 * [Creating a MyGet feed \(repository\)](creating-a-myget-repository.md)
@@ -64,7 +60,7 @@
     * Getting package update notifications
 * [Analyzing open-source licenses](how-to/license-analysis.md)
 * [Package vulnerabilities](how-to/package-vulnerabilities.md)
-* TODO [Managing access tokens](how-to/access-tokens.md)
+* [Managing access tokens](how-to/access-tokens.md)
 
 ## Build services
 * TODO What are build services?
