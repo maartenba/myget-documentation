@@ -169,7 +169,7 @@
 
 ## Release notes
 
-* MyGet 2017.1
+* [MyGet 2017.1](release-notes/myget-20171.md)
 * [MyGet 2016.2](release-notes/myget-2.2.md)
 * [MyGet 2016.1](release-notes/myget-2.1.md)
 * [MyGet 2015.1](release-notes/myget-2.0.md)

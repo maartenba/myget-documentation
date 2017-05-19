@@ -1,10 +1,11 @@
-# MyGet 1.9 Release Notes
+# MyGet 2014.1 Release Notes
 
-MyGet 1.9 was released on February 27, 2014.
+MyGet 2014.1 was released on February 27, 2014.
 
 ## Features
 
 ### MyGet
+
 * Updated documentation website
 * Support for NuGet 2.8
 * Username is now added to password reset e-mails
@@ -17,13 +18,15 @@ MyGet 1.9 was released on February 27, 2014.
 * RSS feed of activity on your MyGet feed
 
 ### MyGet Enterprise
+
 * [Enhancements to MyGet Gallery for Enterprise subscriptions](http://blog.myget.org/post/2014/02/17/Enhancements-to-MyGet-Gallery-for-Enterprise-subscriptions.aspx)
 * Organization specific feeds are now visible to all users that are logged in
 
 ### MyGet Build Services
+
 * Support for NuGet 2.8
 * Support for MSBuild 2013
-* Configure which project(s) should be built
+* Configure which project\(s\) should be built
 * [Configure which packages are pushed to your feed after build](http://blog.myget.org/post/2014/02/24/Which-packages-are-added-to-a-feed-during-build.aspx)
 * Configure build targets
 * Specify default package source and default push source
@@ -36,6 +39,7 @@ MyGet 1.9 was released on February 27, 2014.
 * [Build status badges](http://blog.myget.org/post/2014/01/15/Build-Status-Badges.aspx)
 
 ## Bug Fixes
+
 * Packages downloaded through the browser now have a .nupkg file extension
 * NuGet Package Explorer 2.8 publishing works again
 * Package restore with proxied feeds now works on feeds larger than 100 packages
@@ -45,3 +49,4 @@ MyGet 1.9 was released on February 27, 2014.
 Next to all these, we have done a tremendous effort on our back-end: upgrade to the latest Windows Azure SDK and switch to JSON-based traffic to our storage accounts, a new queuing framework which increases back-end messaging throughput, ...
 
 _Happy packaging!_
+

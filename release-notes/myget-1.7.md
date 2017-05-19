@@ -1,13 +1,15 @@
-# MyGet 1.7 Release Notes
+# MyGet 2013.3 Release Notes
 
-MyGet 1.7 was released on May 17, 2013.
+MyGet 2013.3 was released on May 17, 2013.
 
 ## Features
 
-### MyGet Docs (new!)
-* New MyGet Documentation site at http://docs.myget.org
+### MyGet Docs \(new!\)
+
+* New MyGet Documentation site at [http://docs.myget.org](http://docs.myget.org)
 
 ### MyGet
+
 * Support for NuGet 2.5
 * Support for NuGet 2.5 new search syntax to query feeds
 * Support for cross-domain calls to MyGet feeds from within Silverlight
@@ -21,15 +23,17 @@ MyGet 1.7 was released on May 17, 2013.
 * Redesign of home page when authenticated
 * Activity streams on home page when authenticated
 * Activity stream on own user profile when authenticated
-* Links to the FAQ page are now pointing to http://docs.myget.org/docs/Reference/myget-faq
+* Links to the FAQ page are now pointing to [http://docs.myget.org/docs/Reference/myget-faq](http://docs.myget.org/docs/Reference/myget-faq)
 * New feed setting: auto-publish symbols
 * Added username and subscription ID to Subscription Reminder emails
 * Added link on the plans page to request a free trial of one of the paid plans
 
 ### MyGet Enterprise
+
 * All fixes and features mentioned on this page also apply to MyGet Enterprise
 
 ### MyGet Build Services
+
 * AssemblyInfo patching as-a-service
 * Show number of packages produced during build
 * Link to packages produced during build
@@ -38,6 +42,7 @@ MyGet 1.7 was released on May 17, 2013.
 * Improved custom build script support by providing various settings as process-specific environment variables
 
 ## Bug Fixes
+
 * Fixed an issue with the feed activity page
 * Fixed an issue with NuGet package restore over HTTPS
 * Fixed an issue with pushing packages to nuget.org caused by enforced SSL
@@ -49,3 +54,4 @@ MyGet 1.7 was released on May 17, 2013.
 * Numerous performance improvements
 
 _Happy packaging!_
+

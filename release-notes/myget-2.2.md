@@ -1,17 +1,17 @@
-# MyGet 2.2 Release Notes
+# MyGet 2016.2 Release Notes
 
-MyGet 2.2 was released on August 19, 2016.
+MyGet 2016.2 was released on August 19, 2016.
 
 ## Highlights
 
-This 2.2 release of MyGet again adds some new functionality to the service. 
+This 2016.2 release of MyGet again adds some new functionality to the service. 
 Major highlights of this release are: 
 
 * our **[improved build log viewer](http://blog.myget.org/post/2016/08/04/Improved-build-log-viewer-with-error-navigation.aspx)** with warning and error navigation, log level coloring and deep linking support,
 * a new profile section providing access to your invoices and billing settings,
 * opt-in **[support for expiring access tokens](http://blog.myget.org/post/2016/06/14/Setting-an-expiration-time-for-your-MyGet-access-tokens.aspx)** (API keys).
 
-<a href="https://www.myget.org"><img src="assets/host-your-packages-on-myget.gif" alt="MyGet 2.2 Highlights" /></a>
+<a href="https://www.myget.org"><img src="assets/host-your-packages-on-myget.gif" alt="MyGet 2016.2 Highlights" /></a>
 
 ## Features
 

@@ -1,10 +1,11 @@
-# MyGet 1.5 Release Notes
+# MyGet 2013.1 Release Notes
 
-MyGet 1.5 was released on January 5, 2013.
+MyGet 2013.1 was released on January 5, 2013.
 
 ## Features
 
 ### MyGet
+
 * Display feeds on profile page.
 * Allow specifying links to other social networks in profile page.
 * Redesign public profile page.
@@ -15,6 +16,7 @@ MyGet 1.5 was released on January 5, 2013.
 * Feed retention policies.
 
 ### MyGet Build Services
+
 * TypeScript build targets installed on build servers.
 * Support building portable libraries.
 * Support linking CodePlex projects to a build source.
@@ -22,9 +24,11 @@ MyGet 1.5 was released on January 5, 2013.
 * Add a buildrunner environment variable.
 
 ## Bug Fixes
+
 * Add package shows prerelease packages even when option is not checked.
 * Build should fail when build.bat returns a non-zero code.
 * Build fails on private BitBucket repositories.
 * API key is lost after editing profile.
 
 _Happy packaging!_
+
