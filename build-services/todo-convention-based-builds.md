@@ -1,0 +1,2 @@
+TODO: highlight that convention-based == latest, greatest, potentially breaking, build configuration
+Using this means you have to be willing to migrate your code whenever required to comply with updated build configurations.

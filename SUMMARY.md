@@ -73,8 +73,8 @@
 ## Build services
 
 * TODO What are build services?
-* TODO Convention-based builds
-  * For NuGet
+* [TODO Convention-based builds](build-services/todo-convention-based-builds.md)
+  * [For NuGet](build-services/todo-convention-based-builds/for-nuget.md)
   * For NPM
   * For VSIX
 * TODO Build scripts
