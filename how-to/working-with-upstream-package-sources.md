@@ -16,17 +16,28 @@ Poetic answer:
 > 
 > _The consumer, however, is only allowed to fetch or query those upstream packages if the feed he's talking to (downstream) is also configured to proxy the upstream package source._
 
-## Adding a package from another package source
-
-You can easily add packages to your MyGet feed originating from another package source, such as nuget.org, nmpjs.org, etc. This is using the feed's configured package sources under the hood.
+## Adding a package source to your MyGet feed
 
 By default, MyGet feeds have the public, central repositories configured for each package type. This includes:
 
 * NuGet: https://www.nuget.org/api/v2
-* npm: http://registry.npmjs.org/
-* Maven: https://repo1.maven.org/maven2/
+* Bower: https://bower.herokuapp.com
+* npm: http://registry.npmjs.org
+* Maven: https://repo1.maven.org/maven2
 
-The _Add Package From Feed_ dialog shows 
+To configure an additional package source for your MyGet feed, navigate to _Feed Settings > Package Sources_. Then click _Add Package Source_ and select the package source type you want to add.
+
+![](/assets/add package source button.png)
+
+A dialog will prompt your for package source information and will also expose a few common presets for you to take advantage of.
+If you have any access privileges to other MyGet feeds, you will see those in the MyGet Feeds presets, so you can easily build a chain of package sources to facilitate a [package promotion flow](/how-to/working-with-upstream-package-sources.md#using-a-feed-as-a-staging-area-push-upstream).
+
+
+
+## Adding a package from another package source
+
+You can easily add packages to your MyGet feed originating from another package source, such as nuget.org, nmpjs.org, etc. This is using the feed's configured package sources under the hood.
+
 
 ## Proxy packages from another package source
 
