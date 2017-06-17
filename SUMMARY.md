@@ -63,7 +63,8 @@
   * [Import upstream packages](how-to/working-with-upstream-package-sources.md#Adding-a-package-from-another-package-source)
   * [As a package proxy](how-to/working-with-upstream-package-sources.md#proxy-packages-from-another-package-source)
   * [As a package mirror](how-to/working-with-upstream-package-sources.md#mirror-packages-from-another-package-source)
-  * [As a staging area \(push upstream\)](how-to/working-with-upstream-package-sources.md#Using-a-MyGet-feed-as-a-staging-area-%28before-pushing-upstream%29)
+  * [As a staging area \(push upstream\)](how-to/working-with-upstream-package-sources.md#using-a-myget-feed-as-a-staging-area-before-pushing-upstream)
+  * [Restore packages on MyGet Build Services](how-to/working-with-upstream-package-sources.md#using-upstream-package-sources-on-myget-build-services)
 * [Keeping projects up-to-date](how-to/keeping-projects-up-to-date.md)
   * Auto-updating packages
   * Getting package update notifications
