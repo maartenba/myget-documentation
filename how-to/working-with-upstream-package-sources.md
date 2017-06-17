@@ -45,10 +45,21 @@ If you select another private MyGet feed you have access to as an upstream packa
 
 ## Adding a package from another package source
 
-You can easily add packages to your MyGet feed originating from another package source, such as nuget.org, nmpjs.org, etc. This is using the feed's configured package sources under the hood.
+You can easily add packages to your MyGet feed originating from another package source, such as nuget.org, nmpjs.org, etc. This is using the feed's configured package sources under the hood. If you want to add a package from another feed onto your MyGet feed, the other feed needs to be configured as a package source to that feed.
 
+Adding a package from an upstream package source can happen in three ways: manually, by reference (proxying), or by value (mirroring).
+* **Manually**: you can add packages from an upstream package source to your feed manually by using the _Add Package_ button you will find under your feed's _Packages_ page. 
 
-## Proxy packages from another package source
+  ![](/assets/add package button.png)
+
+  Select _From Feed_ in the dialog that prompts.
+
+  ![](/assets/add package from feed.png)
+
+* **Proxying**: the package metadata is copied to the MyGet feed, the package itself remains hosted on the upstream package source. When querying the package, we call the upstream package source to fetch the package.
+* **Mirroring**: the package metadata and the package itself are copied onto the MyGet feed. When querying the package, we server the package directly and don't use the upstream packages source. Mirroring of a package version happens upon the first request for that given package version.
+
+### Proxy packages from another package source
 
 You can configure a package source to proxy upstream packages through your MyGet feed to your feed consumers. Proxying makes it easy to have a single MyGet feed aggregate packages from multiple sources. Package consumers need only to configure a single MyGet feed, and all packages available on upstream, proxied package sources will become available to them.
 
