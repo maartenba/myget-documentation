@@ -1,6 +1,12 @@
 # Working with upstream package sources
 
-Package sources play a key role in a professional approach towards Package Management. Upstream package sources make it easy to pull in packages from other package sources onto your downstream MyGet feeds. On the other hand, you can also target these package sources to push packages upstream from your MyGet feeds.
+Package sources play a key role in a professional approach towards Package Management. MyGet gives you the option to specify one or more package sources for a feed. 
+
+**Q: Why use package sources?**
+
+* Upstream package sources make it easy to pull in packages from other package sources onto your downstream MyGet feeds. 
+* You can also target these package sources to push packages upstream from your MyGet feeds.
+* Any configured package source on a MyGet feed will be made available to you in MyGet Build Services without having to commit any credentials or secrets in your source repository.
 
 Before diving into some practical scenarios, let's make sure we are clear in terms of terminology. The following Q&A should help you with that in a rather poetic way.
 
@@ -78,3 +84,23 @@ The following diagram illustrates the effects of package source mirroring.
 ## Using a MyGet feed as a staging area (before pushing upstream)
 
 TODO
+
+## Using upstream package sources on MyGet Build Services
+
+Package sources for a feed are also available during build. This can be useful in the following scenarios:
+
+* An additional package source is needed during build. MyGet will make the package source available during build if it has been added to the feed's package sources.
+* If you have a private feed requiring authentication but do not wish to add credentials to source control, credentials can be added to the feed's package source. These credentials will be available during build and allow you to consume a protected feed with ease.
+* The API key for a package source is also transferred to the build server. This means during a build, you can call into [`nuget.exe push`](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference#push) and push packages to configured package sources.
+* If you want to make use of [`nuget.exe push`](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference#push) in a build script without having to specify the `-Source` parameter. This requires a default package source to be defined.
+
+### Setting default package sources to be used on a MyGet feed's build services
+
+Applies to: `NuGet`
+
+The `NuGet.config` file on our build agents is configured using NuGet's defaults, enriched with all NuGet package sources configured for a feed. Based on these defaults, the following conventions are active:
+
+* The default package source is set to `(Aggregate Source)`, meaning all feeds will be queried for packages in the order defined in the feed's package sources.
+* The default push source (when using `nuget push` without the `-Source` parameter) is NuGet.org.
+
+Both of these conventions can be overridden by editing the build source configuration.
