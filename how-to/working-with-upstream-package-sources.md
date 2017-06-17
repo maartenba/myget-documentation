@@ -59,6 +59,10 @@ Adding a package from an upstream package source can happen in three ways: manua
 * **Proxying**: the package metadata is copied to the MyGet feed, the package itself remains hosted on the upstream package source. When querying the package, we call the upstream package source to fetch the package.
 * **Mirroring**: the package metadata and the package itself are copied onto the MyGet feed. When querying the package, we server the package directly and don't use the upstream packages source. Mirroring of a package version happens upon the first request for that given package version.
 
+Configuring upstream package sources on your MyGet feed unlocks quite a few integration scenarios and automation opportunities!
+
+![](/assets/package source compatibility.png)
+
 ### Proxy packages from another package source
 
 You can configure a package source to proxy upstream packages through your MyGet feed to your feed consumers. Proxying makes it easy to have a single MyGet feed aggregate packages from multiple sources. Package consumers need only to configure a single MyGet feed, and all packages available on upstream, proxied package sources will become available to them.
