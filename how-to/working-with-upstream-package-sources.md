@@ -96,7 +96,9 @@ Package sources for a feed are also available during build. This can be useful i
 
 ### Setting default package sources to be used on a MyGet feed's build services
 
-Applies to: `NuGet`
+<p class="alert alert-info">
+    Applies to: <strong>NuGet</strong>
+</p>
 
 The `NuGet.config` file on our build agents is configured using NuGet's defaults, enriched with all NuGet package sources configured for a feed. Based on these defaults, the following conventions are active:
 
