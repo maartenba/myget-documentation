@@ -36,9 +36,12 @@ To configure an additional package source for your MyGet feed, navigate to _Feed
 ![](/assets/add package source button.png)
 
 A dialog will prompt your for package source information and will also expose a few common presets for you to take advantage of.
+
 If you have any access privileges to other MyGet feeds, you will see those in the MyGet Feeds presets, so you can easily build a chain of package sources to facilitate a [package promotion flow](/how-to/working-with-upstream-package-sources.md#using-a-feed-as-a-staging-area-push-upstream).
 
+![](/assets/add package source - MyGet preset.png)
 
+If you select another private MyGet feed you have access to as an upstream package source, there's no need to provide credentials to be able to restore packages from it on MyGet Build Services. MyGet will impersonate your user account when authenticating against that upstream feed.
 
 ## Adding a package from another package source
 
@@ -91,6 +94,11 @@ Package sources for a feed are also available during build. This can be useful i
 
 * An additional package source is needed during build. MyGet will make the package source available during build if it has been added to the feed's package sources.
 * If you have a private feed requiring authentication but do not wish to add credentials to source control, credentials can be added to the feed's package source. These credentials will be available during build and allow you to consume a protected feed with ease.
+
+<p class="alert alert-info">
+    Applies to: <strong>NuGet</strong>
+</p>
+
 * The API key for a package source is also transferred to the build server. This means during a build, you can call into [`nuget.exe push`](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference#push) and push packages to configured package sources.
 * If you want to make use of [`nuget.exe push`](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference#push) in a build script without having to specify the `-Source` parameter. This requires a default package source to be defined.
 

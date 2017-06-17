@@ -59,8 +59,9 @@
 
 * [Working with retention rules](how-to/package-retention-rules.md)
 * [Working with upstream package sources](how-to/working-with-upstream-package-sources.md)
-  * [As a package proxy](how-to/working-with-upstream-package-sources.md#proxy-upstream-package-source)
-  * [As a staging area \(push upstream\)](how-to/working-with-upstream-package-sources.md#using-a-feed-as-a-staging-area-push-upstream)
+  * [Add packages from a package source](how-to/working-with-upstream-package-sources.md#Adding-a-package-from-another-package-source)
+  * [As a package proxy](how-to/working-with-upstream-package-sources.md#Proxy-packages-from-another-package-source)
+  * [As a staging area \(push upstream\)](how-to/working-with-upstream-package-sources.md#Using-a-MyGet-feed-as-a-staging-area-%28before-pushing-upstream%29)
 * [Keeping projects up-to-date](how-to/keeping-projects-up-to-date.md)
   * Auto-updating packages
   * Getting package update notifications
