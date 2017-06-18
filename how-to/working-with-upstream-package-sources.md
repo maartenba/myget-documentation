@@ -105,6 +105,10 @@ TODO
 
 ## Using upstream package sources on MyGet Build Services
 
+<p class="alert alert-info">
+    Applies to: <strong>NuGet, NPM, PHP Composer</strong>
+</p>
+
 Package sources for a feed are also available during build. This can be useful in the following scenarios:
 
 * An additional package source is needed during build. MyGet will make the package source available during build if it has been added to the feed's package sources.
@@ -116,6 +120,11 @@ Package sources for a feed are also available during build. This can be useful i
 
 * The API key for a package source is also transferred to the build server. This means during a build, you can call into [`nuget.exe push`](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference#push) and push packages to configured package sources.
 * If you want to make use of [`nuget.exe push`](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference#push) in a build script without having to specify the `-Source` parameter. This requires a default package source to be defined.
+
+<p class="alert alert-info">
+    Applies to: <strong>npm</strong><br/>
+    We strongly suggest to _proxy_ registry.npmjs.org to be able to run `npm install` during build, as npm will default to the MyGet feed as the default registry.
+</p>
 
 ### Setting default package sources to be used on a MyGet feed's build services
 
