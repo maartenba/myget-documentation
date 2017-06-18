@@ -123,7 +123,7 @@ Package sources for a feed are also available during build. This can be useful i
 
 <p class="alert alert-info">
     Applies to: <strong>npm</strong><br/>
-    We strongly suggest to _proxy_ registry.npmjs.org to be able to run `npm install` during build, as npm will default to the MyGet feed as the default registry.
+    We strongly suggest to <i>proxy</i> registry.npmjs.org to be able to run `npm install` during build, as npm will default to the MyGet feed as the default registry.
 </p>
 
 ### Setting default package sources to be used on a MyGet feed's build services
