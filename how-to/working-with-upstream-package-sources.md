@@ -101,7 +101,20 @@ The following diagram illustrates the effects of package source mirroring.
 
 ## Using a MyGet feed as a staging area (before pushing upstream)
 
-TODO
+Many development teams are using some kind of _package promotion workflow_: pushing a package from one feed to another based on quality gates, target audience, or any other criteria. This is very typical scenario for which upstream package sources are essential.
+
+Of course, all of this can happen in an automated fashion using package manager client. However, as promoting a package typically involves some kind of human intervention (e.g. release manager approval), we've also made it a first-class feature in the MyGet web site.
+
+Simply pick the package version you want to promote from the package details page, and hit the _Push_ button to initiate the package promotion flow. 
+
+![](/assets/push upstream button.png)
+
+A dialog will provide you with additional options:
+* you can modify or remove the prerelease label of the upstream package version. This allows you to e.g. drop the prerelease label to _release_ a package without rebuilding/repackaging.
+* you can add release notes to be included in the package metadata
+* you can modify or remove the SemVer2 build metadata part of the upstream package version
+
+MyGet is also smart enough to detect any package dependencies you might want to push along in one go as part of this package promotion flow.
 
 ## Using upstream package sources on MyGet Build Services
 
