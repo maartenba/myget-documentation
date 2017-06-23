@@ -44,12 +44,29 @@ If you have any access privileges to other MyGet feeds, you will see those in th
 
 If you select a private MyGet feed you have access to as an upstream package source, there's no need to provide credentials to be able to restore packages from it on MyGet Build Services. MyGet will impersonate your user account when authenticating against that upstream feed.
 
-For any non-MyGet package source that requires authentication, you'll have to provide username and password to be used during Basic Auth.
+For any non-MyGet package source that requires authentication to pull packages, you'll have to provide username and password to be used during Basic Auth.
 
 <p class="alert alert-warning">
     <strong>Warning!</strong> <span style="text-decoration:underline">Be very careful with password managers and browser add-ons providing auto-completion of credentials!</span><br/>
     We recommend disabling these credential managers on the MyGet web site to avoid issues when editing package sources. Oftentimes, these tools auto-complete the credentials fields with out-dated credentials (even when editing different settings in the dialog). <br/>
     When running into package restore failures on MyGet Build Services, or when noticing that upstream packages are no longer available downstream, this is the most common source of the issue. 
+</p>
+
+In the opposite direction, in order to push packages from your downstream MyGet feed to the upstream package source, you may need to configure a (scoped) API key or access token.
+
+### Package Source Filtering
+
+<p class="alert alert-info">
+    Applies to: <strong>NuGet (v2 only!)</strong>
+</p>
+
+When the upstream package source is a v2 NuGet feed, you may configure additional OData filtering.
+Filtering is based on the [OData v3 Filtering System](http://www.odata.org/documentation/odata-version-3-0/odata-version-3-0-core-protocol#thefiltersystemqueryoption). 
+Valid filters are similar to `Id eq 'jQuery'` or `IsLatestVersion eq true and Id ne 'Foo'`.
+
+<p class="alert alert-warning">
+    <strong>Warning!</strong> This capability may go away at some point in favor of newer NuGet v3 APIs.<br/>
+    We currently still keep the feature around for some scenarios that are not yet fully supported on NuGet v3.
 </p>
 
 ## Adding a package from another package source
