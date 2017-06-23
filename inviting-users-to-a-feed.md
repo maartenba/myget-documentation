@@ -86,3 +86,4 @@ Feed ownership can be changed from the feed's *Feed Security* tab.
 <p class="alert alert-warning">
     <strong>Warning!</strong> For private feeds, the feed owner must have an active, paid <a href="https://www.myget.org/plans">MyGet subscription</a>. If the user does not have an active, paid subscripton, the feed will become locked and can only be unlocked by contacting support. Always be careful when assigning the <code>Owns the feed</code> permission - very often <code>Can manage users and all packages for this feed</code> is intended.
 </p>
+

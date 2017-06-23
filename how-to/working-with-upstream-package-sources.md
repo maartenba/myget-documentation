@@ -37,11 +37,19 @@ To configure an additional package source for your MyGet feed, navigate to _Feed
 
 A dialog will prompt your for package source information and will also expose a few common presets for you to take advantage of.
 
+### Package Source Credentials
 If you have any access privileges to other MyGet feeds, you will see those in the MyGet Feeds presets, so you can easily build a chain of package sources to facilitate a [package promotion flow](/how-to/working-with-upstream-package-sources.md#using-a-feed-as-a-staging-area-push-upstream).
 
 ![](/assets/add package source - MyGet preset.png)
 
-If you select another private MyGet feed you have access to as an upstream package source, there's no need to provide credentials to be able to restore packages from it on MyGet Build Services. MyGet will impersonate your user account when authenticating against that upstream feed.
+If you select a private MyGet feed you have access to as an upstream package source, there's no need to provide credentials to be able to restore packages from it on MyGet Build Services. MyGet will impersonate your user account when authenticating against that upstream feed.
+
+For any non-MyGet package source that requires authentication, you'll have to provide username and password to be used during Basic Auth.
+
+<p class="alert alert-warning">
+    <strong>Warning!</strong> <span style="text-decoration:underline">Be very careful with password managers and browser add-ons providing auto-completion of credentials!</span><br/>
+    If you are using any browser add-on or other credential manager that provides auto-completion of this dialog's form, you may run into issues. Oftentimes, when editing another package source setting, these tools also auto-complete the credentials fields with out-dated credentials. When running into package restore failures on MyGet Build Services, or when noticing that upstream packages are no longer available downstream, this is the most common source of the issue. We recommend to disable these credential managers on the MyGet web site to avoid this issue.
+</p>
 
 ## Adding a package from another package source
 
