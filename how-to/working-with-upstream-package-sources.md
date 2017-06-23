@@ -48,7 +48,8 @@ For any non-MyGet package source that requires authentication, you'll have to pr
 
 <p class="alert alert-warning">
     <strong>Warning!</strong> <span style="text-decoration:underline">Be very careful with password managers and browser add-ons providing auto-completion of credentials!</span><br/>
-    If you are using any browser add-on or other credential manager that provides auto-completion of this dialog's form, you may run into issues. Oftentimes, when editing another package source setting, these tools also auto-complete the credentials fields with out-dated credentials. When running into package restore failures on MyGet Build Services, or when noticing that upstream packages are no longer available downstream, this is the most common source of the issue. We recommend to disable these credential managers on the MyGet web site to avoid this issue.
+    We recommend disabling these credential managers on the MyGet web site to avoid issues when editing package sources. Oftentimes, these tools auto-complete the credentials fields with out-dated credentials (even when editing different settings in the dialog). <br/>
+    When running into package restore failures on MyGet Build Services, or when noticing that upstream packages are no longer available downstream, this is the most common source of the issue. 
 </p>
 
 ## Adding a package from another package source
