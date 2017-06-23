@@ -66,8 +66,8 @@
   * [As a staging area \(push upstream\)](how-to/working-with-upstream-package-sources.md#using-a-myget-feed-as-a-staging-area-before-pushing-upstream)
   * [Restore packages on MyGet Build Services](how-to/working-with-upstream-package-sources.md#using-upstream-package-sources-on-myget-build-services)
 * [Keeping projects up-to-date](how-to/keeping-projects-up-to-date.md)
-  * Auto-updating packages
-  * Getting package update notifications
+  * [Auto-updating packages](how-to/keeping-projects-up-to-date/auto-updating-packages.md)
+  * [Getting package update notifications](how-to/keeping-projects-up-to-date/getting-package-update-notifications.md)
 * [Analyzing open-source licenses](how-to/license-analysis.md)
 * [Package vulnerabilities](how-to/package-vulnerabilities.md)
 * [Managing access tokens](how-to/access-tokens.md)
