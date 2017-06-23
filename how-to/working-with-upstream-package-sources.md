@@ -109,12 +109,23 @@ Simply pick the package version you want to promote from the package details pag
 
 ![](/assets/push upstream button.png)
 
-A dialog will provide you with additional options:
-* you can modify or remove the prerelease label of the upstream package version. This allows you to e.g. drop the prerelease label to _release_ a package without rebuilding/repackaging.
-* you can add release notes to be included in the package metadata
-* you can modify or remove the SemVer2 build metadata part of the upstream package version
+A dialog will provide you with additional options. MyGet is also smart enough to detect any package dependencies you might want to push along in one go as part of this package promotion flow.
 
-MyGet is also smart enough to detect any package dependencies you might want to push along in one go as part of this package promotion flow.
+![](/assets/push_package_upstream_dialog.png)
+
+At this point, you can still make a few metadata changes before pushing upstream. 
+This dialog allows you to:
+* modify or remove the prerelease label of the upstream package version. This allows you to e.g. drop the prerelease label to _release_ a package without rebuilding/repackaging.
+* add release notes to be included in the package metadata. MyGet will even support release notes written in markdown and render them properly on the web site!
+* modify or remove the SemVer2 build metadata part of the upstream package version
+* exclude any detected dependencies or satellite packages from the push action
+* apply source labeling if the package was built using MyGet Build Services. When enabled, MyGet will find the build from which the package originated and will add a label to the source control revision it was built from.
+
+To edit a package's metadata, simply click the _Edit_ button next to it and make the modifications. To apply a given modification to all packages in the dialog, hit the _rain drop_ button next to the editable field.
+
+![](/assets/push upstream edit package.png)
+
+
 
 ## Using upstream package sources on MyGet Build Services
 
