@@ -125,8 +125,6 @@ To edit a package's metadata, simply click the _Edit_ button next to it and make
 
 ![](/assets/push upstream edit package.png)
 
-
-
 ## Using upstream package sources on MyGet Build Services
 
 <p class="alert alert-info">
