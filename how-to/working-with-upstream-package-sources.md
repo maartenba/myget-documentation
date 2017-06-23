@@ -107,6 +107,10 @@ The following diagram illustrates the effects of package source proxying.
 
 ![](/assets/package source - proxying.png)
 
+To enable package source proxying, you must tick the checkmark next to _Make all upstream packages available in clients_.
+
+![](/assets/setting package source proxying.png)
+
 ## Mirror packages from another package source
 
 You can configure a package source to mirror upstream packages onto your MyGet feed. This configuration is similar to package proxying, but takes it one step further.
@@ -124,6 +128,12 @@ Drawbacks:
 The following diagram illustrates the effects of package source mirroring.
 
 ![](/assets/package source - mirroring.png)
+
+To enable package source mirroring, you must tick the checkmark next to _Automatically add downloaded upstream packages to the current feed (mirror)_.
+
+![](/assets/setting package source mirroring.png)
+
+Optionally, you can also check the third checkmark to indicate that any package found upstream is to be considered a _package dependency_ (and should not be consumed directly). This will hide those packages from search results, whilst still allowing you to restore them.
 
 ## Using a MyGet feed as a staging area (before pushing upstream)
 
