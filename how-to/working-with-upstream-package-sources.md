@@ -122,6 +122,7 @@ Benefits:
 * No additional latency (except for the first hit that triggers the package mirroring)
 * Protected against upstream package source availability issues
 * Protected against upstream package removal
+* authentication against upstream, private MyGet feeds happens automatically (see [Package Source Credentials](/how-to/working-with-upstream-package-sources.md#package-source-credentials))
 
 Drawbacks:
 * mirrored packages count towards your MyGet storage quota (you can always upgrade your subscription or <a href="mailto:support@myget.org">request a quote</a>!)
