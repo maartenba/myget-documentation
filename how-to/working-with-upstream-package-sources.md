@@ -95,7 +95,7 @@ You can configure a package source to proxy upstream packages through your MyGet
 
 Benefits:
 * upstream packages do not count against your MyGet storage quota
-* authentication against upstream, private MyGet feeds happens automatically (see [Package Source Credentials](/how-to/working-with-upstream-package-sources.md##package-source-credentials))
+* authentication against upstream, private MyGet feeds happens automatically (see [Package Source Credentials](/how-to/working-with-upstream-package-sources.md#package-source-credentials))
 
 Drawbacks:
 * every package request will incur additional latency as opposed to storing the package onto the MyGet feed
