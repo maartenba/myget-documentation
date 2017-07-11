@@ -129,7 +129,7 @@ Drawbacks:
 
 The following diagram illustrates the effects of upstream source mirroring.
 
-
+![](/assets/package source - mirroring.png)
 
 To enable upstream source mirroring, you must tick the checkmark next to _Automatically add downloaded upstream packages to the current feed (mirror)_.
 
