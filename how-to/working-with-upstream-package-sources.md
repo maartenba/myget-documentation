@@ -106,7 +106,7 @@ Drawbacks:
 
 The following diagram illustrates the effects of upstream source proxying.
 
-![](/assets/package source - proxying.png)
+
 
 To enable upstream source proxying, you must tick the checkmark next to _Make all upstream packages available in clients_.
 
