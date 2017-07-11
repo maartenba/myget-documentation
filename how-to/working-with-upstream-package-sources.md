@@ -40,7 +40,7 @@ A dialog will prompt your for upstream source information and will also expose a
 ### Upstream Source Credentials
 If you have any access privileges to other MyGet feeds, you will see those in the MyGet Feeds presets, so you can easily build a chain of package sources to facilitate a [package promotion flow](/how-to/working-with-upstream-package-sources.md#using-a-feed-as-a-staging-area-push-upstream).
 
-![](/assets/add package source - MyGet preset.png)
+
 
 If you select a private MyGet feed you have access to as an upstream package source, there's no need to provide credentials to be able to restore packages from it on MyGet Build Services. MyGet will impersonate your user account when authenticating against that upstream feed.
 
@@ -54,7 +54,7 @@ For any non-MyGet package source that requires authentication to pull packages, 
 
 In the opposite direction, in order to push packages from your downstream MyGet feed to the upstream package source, you may need to configure a (scoped) API key or access token.
 
-### Package Source Filtering
+### Upstream Source Filtering
 
 <p class="alert alert-info">
     Applies to: <strong>NuGet (v2 only!)</strong>
@@ -69,12 +69,12 @@ Valid filters are similar to `Id eq 'jQuery'` or `IsLatestVersion eq true and Id
     We currently still keep the feature around for some scenarios that are not yet fully supported on NuGet v3.
 </p>
 
-## Adding a package from another package source
+## Adding a package from an upstream source
 
-You can easily add packages to your MyGet feed originating from another package source, such as nuget.org, nmpjs.org, etc. This is using the feed's configured package sources under the hood. If you want to add a package from another feed onto your MyGet feed, the other feed needs to be configured as a package source to that feed.
+You can easily add packages to your MyGet feed originating from an upstream source, such as nuget.org, nmpjs.org, etc. This is using the feed's configured upstream sources under the hood. If you want to add a package from another feed onto your MyGet feed, the other feed needs to be configured as an upstream source to that feed.
 
-Adding a package from an upstream package source can happen in three ways: manually, by reference (proxying), or by value (mirroring).
-* **Manually**: you can add packages from an upstream package source to your feed manually by using the _Add Package_ button you will find under your feed's _Packages_ page. 
+Adding a package from an upstream source can happen in three ways: manually, by reference (proxying), or by value (mirroring).
+* **Manually**: you can add packages from an upstream source to your feed manually by using the _Add Package_ button you will find under your feed's _Packages_ page. 
 
   ![](/assets/add package button.png)
 
@@ -82,10 +82,10 @@ Adding a package from an upstream package source can happen in three ways: manua
 
   ![](/assets/add package from feed.png)
 
-* **Proxying**: the package metadata is copied to the MyGet feed, the package itself remains hosted on the upstream package source. When querying the package, we call the upstream package source to fetch the package.
-* **Mirroring**: the package metadata and the package itself are copied onto the MyGet feed. When querying the package, we server the package directly and don't use the upstream packages source. Mirroring of a package version happens upon the first request for that given package version.
+* **Proxying**: the package metadata is copied to the MyGet feed, the package itself remains hosted on the upstream source. When querying the package, we call the upstream source to fetch the package.
+* **Mirroring**: the package metadata and the package itself are copied onto the MyGet feed. When querying the package, we server the package directly and don't use the upstream source. Mirroring of a package version happens upon the first request for that given package version.
 
-Configuring upstream package sources on your MyGet feed unlocks quite a few integration scenarios and automation opportunities!
+Configuring upstream sources on your MyGet feed unlocks quite a few integration scenarios and automation opportunities!
 
 ![](/assets/package source compatibility.png)
 
