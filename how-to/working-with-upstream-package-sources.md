@@ -33,7 +33,7 @@ By default, MyGet feeds have the public, central repositories configured for eac
 
 To configure an additional package source for your MyGet feed, navigate to _Feed Settings > Package Sources_. Then click _Add Package Source_ and select the package source type you want to add.
 
-
+![](/assets/add package source button.png)
 
 A dialog will prompt your for package source information and will also expose a few common presets for you to take advantage of.
 
