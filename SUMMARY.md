@@ -50,6 +50,10 @@
     * Gradle
   * Creating Maven packages \(+ very short intro to build services\)
   * Publishing to MyGet
+* [Composer \(PHP\)](package-managers/phpcomposer.md)
+  * Connecting to a PHP Composer feed
+  * Creating PHP Composer packages
+  * Publishing to MyGet
 * [VSIX](package-managers/vsix.md)
   * Connecting to a VSIX feed
   * Creating VSIX packages \(+ very short intro to build services\)
