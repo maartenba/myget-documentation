@@ -4,9 +4,15 @@ TODO (inspiration: http://docs.myget.org/docs/walkthrough/getting-started-with-n
 
 ## Connecting to a NuGet feed
 
+public feed, private feed with basic auth, pre-authenticated feed URL
+
 ### Credential Provider for Visual Studio
 
+inspiration: http://docs.myget.org/docs/reference/credential-provider-for-visual-studio but needs to be nicer
+
 ## Creating NuGet/.NET Core packages
+
+could have links to the NuGet documentation
 
 ## Publishing to MyGet
 
@@ -39,7 +45,7 @@ We can take this one step further and instead of configuring your MyGet feed glo
 	  </packageRestore>
 	  <packageSources>
 	    <add key="nuget.org" value="https://www.nuget.org/api/v2/" />
-	    <add key="MyGet" value="https://www.myget.org/F/chcuknorris/" />
+	    <add key="MyGet" value="https://www.myget.org/F/chucknorris/" />
 	  </packageSources>
 	  <disabledPackageSources />
 	  <activePackageSource>
