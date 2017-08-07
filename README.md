@@ -1,4 +1,4 @@
-![MyGet - Public and private package repository hosting. Package and dependency management for NuGet, NPM, Bower, VSIX and Maven.](/assets/MyGet logo.png)
+![MyGet - Public and private package repository hosting](/assets/MyGet logo.png)
 
 # What is MyGet?
 
