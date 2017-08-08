@@ -6,9 +6,27 @@ TODO (inspiration: http://docs.myget.org/docs/walkthrough/getting-started-with-n
 
 public feed, private feed with basic auth, pre-authenticated feed URL
 
-### Credential Provider for Visual Studio
+### Visual Studio
+
+#### Public feed
+
+#### Private feed
+
+#### Credential Provider for Visual Studio
 
 inspiration: http://docs.myget.org/docs/reference/credential-provider-for-visual-studio but needs to be nicer
+
+### JetBrains Rider
+
+#### Public feed
+
+#### Private feed
+
+### NuGet.exe
+
+#### Public feed
+
+#### Private feed
 
 ## Creating NuGet/.NET Core packages
 
