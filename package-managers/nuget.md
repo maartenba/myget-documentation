@@ -1,43 +1,76 @@
 # NuGet \(.NET\)
-
 TODO (inspiration: http://docs.myget.org/docs/walkthrough/getting-started-with-nuget)
 
-## Connecting to a NuGet feed
 
+## Connecting to a NuGet feed
 public feed, private feed with basic auth, pre-authenticated feed URL
+
+
+### Find your feed URL
+
+#### Public feed
+There are two types of public feeds you can connect to. A public feed you own and one from the gallery. The only real difference here, is where to find the URL of the feed.
+
+With this URL you can connect to the feed using your favorite tool, which could be [Visual Studio](#visual-studio), [JetBrains Rider](#jetbrains-rider) or the [NuGet-CLI](#nugetexe)
+
+
+##### Gallery feed
+When connecting to a gallery feed you first click on the feed you want to connect to and there click on the "Connect to feed" button.
+
+![Gallery feed details](assets/gallery-feed.png)
+
+A dialog opens where you will once again find your 'NuGet V3' URL.
+
+![Gallery feed URL](assets/connect-gallery-feed.png)
+
+With this URL you can connect to the feed using your favorite tool, which could be [Visual Studio](#visual-studio), [JetBrains Rider](#jetbrains-rider) or the [NuGet-CLI](#nugetexe)
+
+##### Private feed
+To consume private feeds you need to get consume permissions from the feed owner or admin. When you have these rights you can navigate to the 'feed details' where you can find the 'NuGet V3' URL. 
+
+![Feed details](assets/feed-details.png)
+
+With this URL you can connect to the feed using your favorite tool, which could be [Visual Studio](#visual-studio), [JetBrains Rider](#jetbrains-rider) or the [NuGet-CLI](#nugetexe)
+
 
 ### Visual Studio
 
 #### Public feed
+If you don't know where to find your feed URL check the [Find your feed URL](#find-your-feed-url) section.
 
 #### Private feed
 
 #### Credential Provider for Visual Studio
-
 inspiration: http://docs.myget.org/docs/reference/credential-provider-for-visual-studio but needs to be nicer
+
 
 ### JetBrains Rider
 
 #### Public feed
+If you don't know where to find your feed URL check the [Find your feed URL](#find-your-feed-url) section.
 
 #### Private feed
+
 
 ### NuGet.exe
 
 #### Public feed
+If you don't know where to find your feed URL check the [Find your feed URL](#find-your-feed-url) section.
 
 #### Private feed
 
-## Creating NuGet/.NET Core packages
 
+## Creating NuGet/.NET Core packages
 could have links to the NuGet documentation
+
 
 ## Publishing to MyGet
 
+
 ## Troubleshooting
 
-### Package not found during package restore
 
+### Package not found during package restore
 When working with your own feed, whether private or public, chances are you want to consume more than just that feed. When using your MyGet feed and the NuGet.org feed simultaneously, an interesting error may occur during package restore.
 
 	Unable to find version xxxx of package yyyy
