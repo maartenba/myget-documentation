@@ -10,21 +10,23 @@ public feed, private feed with basic auth, pre-authenticated feed URL
 
 #### Private feed
 
-Private feeds are only accessible to the feed owner, and to whomever the feed owner granted sufficient privileges. When we need to connect to a private feed we don't own, we may need to ask the feed owner to invite us to the feed.
+Private feeds are only accessible to the feed owner, and to other users who were granted access by the feed owner. When we need to connect to a private feed we don't own, we may need to ask the feed owner to invite us to the feed.
 
-> ### Hint
-> We can find out how to invite users [here](../inviting-users-to-a-feed.md)
+<p class="alert alert-success">
+    <strong>Tip:</strong> We can find out how to invite users <a href="../inviting-users-to-a-feed.md">here</a>
+</p>
 
 ![Feed details](assets/feed-details.png)
 
-> ### Hint
-> We support [Visual Studio](#visual-studio), [JetBrains Rider](#jetbrains-rider), the [NuGet CLI](#nuget-cli), [dotnet CLI](#dotnet-cli) and [Paket](#paket).
+<p class="alert alert-success">
+    <strong>Tip:</strong> We support <a href="#visualstudio">Visual Studio</a>, <a href="#rider">JetBrains Rider</a>, the <a href="#nugetcli">NuGet CLI</a>, <a href="#dotnetcli">dotnet CLI</a> and <a href="#paket">Paket</a>
+</p>
 
 #### Public feed
 
-There are two types of public feeds we can connect to. A public feed we own and one from the gallery. The only real difference here, is where to find the URL of the feed.
+There are two types of public feeds we can connect to: public feeds we own, or a feed we want to consume from the gallery. The only real difference is where to find the URL of the feed.
 
-MyGet feeds have multiple endpoints, and each one is specific to a particular package type and protocol. Pick the NuGet endpoint URL that matches the protocol version you want to use (e.g. NuGet v3), and use that to configure the feed endpoint in your favorite NuGet client.
+MyGet feeds have multiple endpoints, and each one is specific to a particular package type and protocol. Pick the NuGet endpoint URL that matches the protocol version you want to use (e.g. NuGet v3), and use that to configure the feed endpoint in your favorite NuGet client. Let's go over how to connect to these.
 
 #### Gallery feed
 
@@ -35,7 +37,7 @@ After browsing the list of feeds on the [MyGet Gallery](https://myget.org/galler
 
 We will need the NuGet V3 URL, so let's copy it for later use.
 
-### Visual Studio
+### Visual Studio <a id="visualstudio"></a>
 
 #### Public feed
 
@@ -47,7 +49,7 @@ If we don't know where to find our feed URL check the [Find our feed URL](#find-
 
 inspiration: http://docs.myget.org/docs/reference/credential-provider-for-visual-studio but needs to be nicer
 
-### JetBrains Rider
+### JetBrains Rider <a id="rider"></a>
 
 #### Public feed
 
@@ -55,7 +57,7 @@ If we don't know where to find our feed URL check the [Find our feed URL](#find-
 
 #### Private feed
 
-### NuGet CLI
+### NuGet CLI <a id="nugetcli"></a>
 
 #### Public feed
 
@@ -71,16 +73,15 @@ could have links to the NuGet documentation
 
 ## Troubleshooting
 
-
 ### Package not found during package restore
 
 When working with our own feed, whether private or public, chances are we want to consume more than just that feed. When using our MyGet feed and the NuGet.org feed simultaneously, an interesting error may occur during package restore.
 
-   Unable to find version xxxx of package yyyy
+> Unable to find version xxxx of package yyyy
 
-The reason this happens is because the NuGet command line, the NuGet Visual Studio Extension and the NuGet PoourShell Console all have a configuration option specifying which package source to install from. When this setting is changed to one specific feed, other feeds will be ignored and the error above will be shown during package restore.
+The reason this happens is because the NuGet command line, the NuGet Visual Studio Extension and the NuGet Powershell Console all have a configuration option specifying which package source to install from. When this setting is changed to one specific feed, other feeds will be ignored and the error above will be shown during package restore.
 
-The solution is very simple: we can set the active package source to aggregate in Visual Studio, or simply configure NuGet to always use the aggregate package source for the current project. NuGet has an inheritance system for NuGet.config files, where the NuGet.config file closest to the solution file gets the last say. If we add the following NuGet.config file next to the solution file for our project, we should be fine:
+The solution is very simple: we can set the active package source to "aggregate" in Visual Studio, or simply configure NuGet to always use the "aggregate source" for the current project. NuGet has an inheritance system for NuGet.config files, where the NuGet.config file closest to the solution file gets the last say. If we add the following NuGet.config file next to the solution file for our project, we should be fine:
 
 ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -91,7 +92,7 @@ The solution is very simple: we can set the active package source to aggregate i
     </configuration>
 ```
 
-We can take this one step further and instead of configuring our MyGet feed globally for our system (and requiring other devs on our team to do the same), why not distribute a NuGet.config along with the sources?
+We can take this one step further and instead of configuring our MyGet feed globally for our system (and requiring other devs on our team to do the same), why not distribute a NuGet.config along with the sources? We can place a `NuGet.config` file right next to our `.sln` file for NuGet to pick it up.
 
 ```xml
   <?xml version="1.0" encoding="utf-8"?>
