@@ -4,44 +4,47 @@ TODO (inspiration: http://docs.myget.org/docs/walkthrough/getting-started-with-n
 
 ## Connecting to a NuGet feed
 
-public feed, private feed with basic auth, pre-authenticated feed URL
+Here we will discuss were to find the feed URL and how to connect using our favorite NuGet client.
 
-### Find our feed URL
+### Find the feed URL
 
 #### Private feed
 
-Private feeds are only accessible to the feed owner, and to other users who were granted access by the feed owner. When we need to connect to a private feed we don't own, we may need to ask the feed owner to invite us to the feed.
+Private feeds are only accessible to the feed owner and to other users who were granted access by the feed owner. To connect to a feed we don't own, we may have to request permission from the feed owner.
 
 <p class="alert alert-success">
-    <strong>Tip:</strong> We can find out how to invite users <a href="../inviting-users-to-a-feed.md">here</a>
+    <strong>Tip:</strong> Find out how to invite users <a href="../inviting-users-to-a-feed.md">here</a>
 </p>
 
 ![Feed details](assets/feed-details.png)
 
 <p class="alert alert-success">
-    <strong>Tip:</strong> We support <a href="#visualstudio">Visual Studio</a>, <a href="#rider">JetBrains Rider</a>, the <a href="#nugetcli">NuGet CLI</a>, <a href="#dotnetcli">dotnet CLI</a> and <a href="#paket">Paket</a>
+    <strong>Tip:</strong> We support <a href="#visualstudio">Visual Studio</a>, <a href="#jetbrainsrider">JetBrains Rider</a>, the <a href="#nugetcli">NuGet CLI</a>, <a href="#dotnetcli">dotnet CLI</a>, <a href="#paket">Paket</a> and any other NuGet clients that use the standard NuGet v2 or v3 protocols.
 </p>
 
 #### Public feed
 
-There are two types of public feeds we can connect to: public feeds we own, or a feed we want to consume from the gallery. The only real difference is where to find the URL of the feed.
+There are two types of public feeds we can connect to: public feeds we own or a feed we want to consume from the gallery. The only real difference, in terms of consuming, is where to find the URL of the feed.
 
 MyGet feeds have multiple endpoints, and each one is specific to a particular package type and protocol. Pick the NuGet endpoint URL that matches the protocol version you want to use (e.g. NuGet v3), and use that to configure the feed endpoint in your favorite NuGet client. Let's go over how to connect to these.
 
 #### Gallery feed
 
-After browsing the list of feeds on the [MyGet Gallery](https://myget.org/gallery) (or on the MyGet Enterprise Gallery), we can get its connection details using the **Connect to feed** button. This will open a dialog where we can find the various endpoints for this feed.
+After browsing the list of feeds on the [MyGet Gallery](https://myget.org/gallery) (or on the MyGet Enterprise Gallery), we can get its connection details using the **Connect to feed** button.
 
 ![Gallery feed details](assets/gallery-feed.png)
+
+This will open a dialog where we can find the various endpoints for this feed.
+
 ![Gallery feed URL](assets/connect-gallery-feed.png)
 
 We will need the NuGet V3 URL, so let's copy it for later use.
 
-### Visual Studio <a id="visualstudio"></a>
+### Visual Studio
 
 #### Public feed
 
-If we don't know where to find our feed URL check the [Find our feed URL](#find-our-feed-url) section.
+To find the feed URL check the [Find our feed URL](#find-our-feed-url) section.
 
 #### Private feed
 
@@ -49,19 +52,35 @@ If we don't know where to find our feed URL check the [Find our feed URL](#find-
 
 inspiration: http://docs.myget.org/docs/reference/credential-provider-for-visual-studio but needs to be nicer
 
-### JetBrains Rider <a id="rider"></a>
+### JetBrains Rider
 
 #### Public feed
 
-If we don't know where to find our feed URL check the [Find our feed URL](#find-our-feed-url) section.
+To find the feed URL check the [Find our feed URL](#find-our-feed-url) section.
 
 #### Private feed
 
-### NuGet CLI <a id="nugetcli"></a>
+### NuGet CLI
 
 #### Public feed
 
-If we don't know where to find our feed URL check the [Find our feed URL](#find-our-feed-url) section.
+To find the feed URL check the [Find our feed URL](#find-our-feed-url) section.
+
+#### Private feed
+
+### dotnet CLI
+
+#### Public feed
+
+To find the feed URL check the [Find our feed URL](#find-our-feed-url) section.
+
+#### Private feed
+
+### Paket
+
+#### Public feed
+
+To find the feed URL check the [Find our feed URL](#find-our-feed-url) section.
 
 #### Private feed
 
@@ -92,7 +111,7 @@ The solution is very simple: we can set the active package source to "aggregate"
     </configuration>
 ```
 
-We can take this one step further and instead of configuring our MyGet feed globally for our system (and requiring other devs on our team to do the same), why not distribute a NuGet.config along with the sources? We can place a `NuGet.config` file right next to our `.sln` file for NuGet to pick it up.
+We can take this one step further and instead of configuring our MyGet feed globally for our system (and requiring other devs on our team to do the same), why not distribute a `NuGet.config` along with the sources? We can place a `NuGet.config` file right next to our `.sln` file for NuGet to pick it up.
 
 ```xml
   <?xml version="1.0" encoding="utf-8"?>
