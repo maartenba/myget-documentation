@@ -58,7 +58,7 @@ The first step in connecting Rider to a MyGet feed is adding it as a package sou
 
 ![Nuget tool window](assets/rider-feeds-pane.png)
 
-From here, we can add our MyGet feed (or edit an existing entry). We will have to give our feed a name so we can easily recognize it in Rider, and the URL to our feed.
+From here, we can add our MyGet feed (or edit an existing entry). We will have to provide our feed a name so we can easily recognize it in Rider, and the URL to our feed.
 
 #### Private feed
 
