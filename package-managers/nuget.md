@@ -58,7 +58,7 @@ The first step in connecting Rider to a MyGet feed is adding it as a package sou
 
 ![Nuget tool window](assets/rider-feeds-pane.png)
 
-From here, we can add our MyGet feed (or edit an existing entry). We will have to give our feed a name so we can easily recognize it in Rider, and the URL to our feed.
+From here, we can add our MyGet feed (or edit an existing entry). We will have to provide our feed a name so we can easily recognize it in Rider, and the URL to our feed.
 
 #### Private feed
 
@@ -70,17 +70,22 @@ In order to consume our private feed we have to give the feed URL and enter our 
 
 While Rider supports using pre-authenticated feeds as well as feeds that require entering credentials, we recommend using the latter. Rider safely stores our MyGet username/password in its [password store](https://www.jetbrains.com/help/idea/passwords.html).
 
+When using the pre-authenticated feed we, of cource, don't need to enter our credentials.
+
 #### Public feed
 
-To work with public feeds you just leave the credentials empty and Rider will connect to the feed.
+Details on how to find the feed URL can be found in the [Find the feed URL](#find-the-feed-url) section.
+
+The feed types can be found in the **FEED DETAILS** section under **Feed Type**.
+
+![Feed types](assets/feed-types.png)
+
+After making sure our feed is a public one we can consume it in Rider.
 
 ![Feed without credentials](assets/rider-feed-no-credentials.png)
 
-<p class="alert alert-error">
-    <strong><TODO: change this to a Windows dialog/strong>
-</p>
+To work with public feeds, we just leave the credentials empty and Rider will connect to the feed.
 
-Details on how to find the feed URL can be found in the [Find the feed URL](#find-the-feed-url) section.
 
 ### NuGet CLI
 
