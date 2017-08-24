@@ -54,7 +54,7 @@ inspiration: http://docs.myget.org/docs/reference/credential-provider-for-visual
 
 ### JetBrains Rider
 
-The first step in connecting Rider to a MyGet feed is adding it as a package source. We can do this using NuGet.exe (via good old [NuGet.config](https://docs.microsoft.com/en-us/nuget/schema/nuget-config-file#package-source-sections), or from within Rider. From the **NuGet tool window**, open the **Sources** tab. This will show us all of the NuGet configuration files that are in play, and a list of all feeds configured.
+The first step in connecting Rider to a MyGet feed is adding it as a package source. We can do this using NuGet.exe (via good old [NuGet.config](https://docs.microsoft.com/en-us/nuget/schema/nuget-config-file#package-source-sections), or from within Rider. From the **NuGet tool window** (<kbd>Alt</kbd> + <kbd>7</kbd> will bring this right up), open the **Sources** tab. This will show us all of the NuGet configuration files that are in play, and a list of all feeds configured.
 
 ![Nuget tool window](assets/rider-feeds-pane.png)
 
@@ -68,7 +68,7 @@ In order to consume our private feed we have to give the feed URL and enter our 
 
 ![Feed with credentials](assets/feed-with-credentials.png)
 
-While Rider supports using pre-authenticated feeds as well as feeds that require entering credentials, we recommend using the latter. Rider safely stores our MyGet username/password in its [password store](https://www.jetbrains.com/help/idea/passwords.html), which is based on [KeePass](http://keepass.info/).
+While Rider supports using pre-authenticated feeds as well as feeds that require entering credentials, we recommend using the latter. Rider safely stores our MyGet username/password in its [password store](https://www.jetbrains.com/help/idea/passwords.html).
 
 #### Public feed
 
