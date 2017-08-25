@@ -54,35 +54,68 @@ inspiration: http://docs.myget.org/docs/reference/credential-provider-for-visual
 
 ### JetBrains Rider
 
-#### Public feed
+The first step in connecting Rider to a MyGet feed is adding it as a package source. We can do this using NuGet.exe (via good old [NuGet.config](https://docs.microsoft.com/en-us/nuget/schema/nuget-config-file#package-source-sections), or from within Rider. From the **NuGet tool window** (<kbd>Alt</kbd> + <kbd>7</kbd>), open the **Sources** tab. This will show us all of the NuGet configuration files that are in play, and a list of all feeds configured.
 
-To find the feed URL check the [Find our feed URL](#find-our-feed-url) section.
+![NuGet tool window](assets/rider-feeds-pane.png)
+
+From here, we can add our MyGet feed (or edit an existing entry). We will have to provide our feed a name so we can easily recognize it in Rider, and the URL to our feed.
 
 #### Private feed
+
+Details on how to find the feed URL can be found in the [Find the feed URL](#find-the-feed-url) section.
+
+In order to consume our private feed we have to give the feed URL and enter our credentials.
+
+![Feed with credentials](assets/feed-with-credentials.png)
+
+While Rider supports using pre-authenticated feeds as well as feeds that require entering credentials, we recommend using the latter. Rider safely stores our MyGet username/password in its [password store](https://www.jetbrains.com/help/idea/passwords.html).
+
+When using the pre-authenticated feed we, of course, don't need to enter our credentials.
+
+#### Public feed
+
+Details on how to find the feed URL can be found in the [Find the feed URL](#find-the-feed-url) section.
+
+The feed types can be found in the **FEED DETAILS** section under **Feed Type**.
+
+![Feed types](assets/feed-types.png)
+
+After making sure our feed is a public one we can consume it in Rider.
+
+![Feed without credentials](assets/rider-feed-no-credentials.png)
+
+To work with public feeds, we just leave the credentials empty and Rider will connect to the feed.
+
 
 ### NuGet CLI
 
 #### Public feed
 
-To find the feed URL check the [Find our feed URL](#find-our-feed-url) section.
+Details on how to find the feed URL can be found in the [Find the feed URL](#find-the-feed-url) section.
 
 #### Private feed
+
+Details on how to find the feed URL can be found in the [Find the feed URL](#find-the-feed-url) section.
 
 ### dotnet CLI
 
 #### Public feed
 
-To find the feed URL check the [Find our feed URL](#find-our-feed-url) section.
+Details on how to find the feed URL can be found in the [Find the feed URL](#find-the-feed-url) section.
 
 #### Private feed
+
+Details on how to find the feed URL can be found in the [Find the feed URL](#find-the-feed-url) section.
 
 ### Paket
 
 #### Public feed
 
-To find the feed URL check the [Find our feed URL](#find-our-feed-url) section.
+Details on how to find the feed URL can be found in the [Find the feed URL](#find-the-feed-url) section.
 
 #### Private feed
+
+Details on how to find the feed URL can be found in the [Find the feed URL](#find-the-feed-url) section.
 
 ## Creating NuGet/.NET Core packages
 
