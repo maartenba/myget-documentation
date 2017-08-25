@@ -54,7 +54,7 @@ inspiration: http://docs.myget.org/docs/reference/credential-provider-for-visual
 
 ### JetBrains Rider
 
-The first step in connecting Rider to a MyGet feed is adding it as a package source. We can do this using NuGet.exe (via good old [NuGet.config](https://docs.microsoft.com/en-us/nuget/schema/nuget-config-file#package-source-sections), or from within Rider. From the **NuGet tool window** (<kbd>Alt</kbd> + <kbd>7</kbd> will bring this right up), open the **Sources** tab. This will show us all of the NuGet configuration files that are in play, and a list of all feeds configured.
+The first step in connecting Rider to a MyGet feed is adding it as a package source. We can do this using NuGet.exe (via good old [NuGet.config](https://docs.microsoft.com/en-us/nuget/schema/nuget-config-file#package-source-sections), or from within Rider. From the **NuGet tool window** (<kbd>Alt</kbd> + <kbd>7</kbd>), open the **Sources** tab. This will show us all of the NuGet configuration files that are in play, and a list of all feeds configured.
 
 ![NuGet tool window](assets/rider-feeds-pane.png)
 
