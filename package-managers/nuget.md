@@ -86,7 +86,6 @@ After making sure our feed is a public one we can consume it in Rider.
 
 To work with public feeds, we just leave the credentials empty and Rider will connect to the feed.
 
-
 ### NuGet CLI
 
 #### Private feed
@@ -99,7 +98,7 @@ Details on how to find the feed URL can be found in the [Find the feed URL](#fin
 
 ### dotnet CLI
 
-In this section we are going to add our packages via the dotnet CLI. We assume that the dotnet CLI tools are installed. If this is not the case, our friends at Microsoft can help us with that via [this link](https://www.microsoft.com/net/core).
+In this section we are going to add our packages using the dotnet CLI. Make sure to [install the .NET Core tooling](https://www.microsoft.com/net/core). The folks (and docs) at Microsoft can help you on your way.
 
 #### Private feed
 
@@ -109,22 +108,19 @@ Details on how to find the feed URL can be found in the [Find the feed URL](#fin
 
 Details on how to find the feed URL can be found in the [Find the feed URL](#find-the-feed-url) section.
 
-When adding a package to our project via the `dotnet CLI` we can get a generated command from the package details in our feed.
+When adding a package to our project using the `dotnet CLI` we can get a generated command from the package details in our feed.
 
 ![dotnet add command](assets/dotnet-add-command.png)
 
-We'll copy this command for later use.
-
-With our command on our clipboard, we open our favorite command line tool, in this case the standard Windows Command Prompt and navigate to the root of our project where we want to add the package to (where the `.csproj` file lives). There we paste the command from our clipboard and execute it.
+Let's copy this command and paste it on the command line. In our example, we'll use the Windows Comand Prompt. Do make sure the working directory is the root of the project we want to add the package(s) to (where the `.csproj` file lives).
 
 ![dotnet add command in prompt](assets/dotnet-add-command-prompt.png)
-After running this command we get output like this
 
+After running this command, we'll see the following output, which tells us our package is installed:
 ![dotnet add command output](assets/dotnet-add-command-prompt-output.png)
-Our package is installed. To verify this we can look in the Solution File
 
+In the project file, we can verify our package is installed. The `dotnet add` command will have added a `PackageReference` element.
 ![dotnet Project file](assets/dotnet-project-file.png)
-Here we can see the reference to our added package.
 
 ### Paket
 
