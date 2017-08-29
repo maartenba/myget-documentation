@@ -108,7 +108,7 @@ Details on how to find the feed URL can be found in the [Find the feed URL](#fin
 
 Details on how to find the feed URL can be found in the [Find the feed URL](#find-the-feed-url) section.
 
-When adding a package to our project using the `dotnet CLI` we can get a generated command from the package details in our feed.
+When adding a package to our project using the `dotnet` CLI we can get a generated command from the package details in our feed.
 
 ![dotnet add command](assets/dotnet-add-command.png)
 
