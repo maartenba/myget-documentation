@@ -6,6 +6,10 @@ TODO (inspiration: http://docs.myget.org/docs/walkthrough/getting-started-with-n
 
 Let's discuss where we can find our feed URL and how to connect to it using our favorite NuGet client.
 
+<p class="alert alert-success">
+    <strong>Tip:</strong> We support <a href="#visual-studio">Visual Studio</a>, <a href="#jetbrains-rider">JetBrains Rider</a>, the <a href="#nuget-cli">NuGet CLI</a>, <a href="#dotnet-cli">dotnet CLI</a>, <a href="#paket">Paket</a> and any other NuGet clients that use the standard NuGet v2 or v3 protocols.
+</p>
+
 ### Determining the feed URL
 
 #### Private feed
@@ -17,10 +21,6 @@ Private feeds are only accessible to the feed owner and to other users who were 
 </p>
 
 ![Feed details](assets/feed-details.png)
-
-<p class="alert alert-success">
-    <strong>Tip:</strong> We support <a href="#visual-studio">Visual Studio</a>, <a href="#jetbrains-rider">JetBrains Rider</a>, the <a href="#nuget-cli">NuGet CLI</a>, <a href="#dotnet-cli">dotnet CLI</a>, <a href="#paket">Paket</a> and any other NuGet clients that use the standard NuGet v2 or v3 protocols.
-</p>
 
 #### Public feed
 
