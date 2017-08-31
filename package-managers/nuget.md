@@ -4,37 +4,37 @@ TODO (inspiration: http://docs.myget.org/docs/walkthrough/getting-started-with-n
 
 ## Connecting to a NuGet feed
 
-Here we will discuss were to find the feed URL and how to connect using our favorite NuGet client.
+Let's discuss where we can find our feed URL and how to connect to it using our favorite NuGet client.
 
-### Find the feed URL
+<p class="alert alert-success">
+    <strong>Tip:</strong> We support <a href="#visual-studio">Visual Studio</a>, <a href="#jetbrains-rider">JetBrains Rider</a>, the <a href="#nuget-cli">NuGet CLI</a>, <a href="#dotnet-cli">dotnet CLI</a>, <a href="#paket">Paket</a> and any other NuGet clients that use the standard NuGet v2 or v3 protocols.
+</p>
+
+### Determining the feed URL
 
 #### Private feed
 
 Private feeds are only accessible to the feed owner and to other users who were granted access by the feed owner. To connect to a feed we don't own, we may have to request permission from the feed owner.
 
 <p class="alert alert-success">
-    <strong>Tip:</strong> Find out how to invite users <a href="../inviting-users-to-a-feed.md">here</a>
+    <strong>Tip:</strong> Read more about <a href="../inviting-users-to-a-feed.md">inviting users to a feed</a>.
 </p>
 
 ![Feed details](assets/feed-details.png)
 
-<p class="alert alert-success">
-    <strong>Tip:</strong> We support <a href="#visual-studio">Visual Studio</a>, <a href="#jetbrains-rider">JetBrains Rider</a>, the <a href="#nuget-cli">NuGet CLI</a>, <a href="#dotnet-cli">dotnet CLI</a>, <a href="#paket">Paket</a> and any other NuGet clients that use the standard NuGet v2 or v3 protocols.
-</p>
-
 #### Public feed
 
-There are two types of public feeds we can connect to: public feeds we own or a feed we want to consume from the gallery. The only real difference, in terms of consuming, is where to find the URL of the feed.
+There are two types of public feeds we can connect to: public feeds we own ourselves, or a feed we want to consume from the gallery. The only real difference, in terms of consuming these feeds, is where to find the URL of the feed.
 
-MyGet feeds have multiple endpoints, and each one is specific to a particular package type and protocol. Pick the NuGet endpoint URL that matches the protocol version you want to use (e.g. NuGet v3), and use that to configure the feed endpoint in your favorite NuGet client. Let's go over how to connect to these.
+MyGet feeds have multiple endpoints, and each one is specific to a particular package type and protocol. Pick the NuGet endpoint URL that matches the protocol version you want to use (e.g. NuGet v3), and use that to configure the feed endpoint in your favorite NuGet client.
 
 #### Gallery feed
 
-After browsing the list of feeds on the [MyGet Gallery](https://myget.org/gallery) (or on the MyGet Enterprise Gallery), we can get its connection details using the **Connect to feed** button.
+First things first: we'll have to find the feed we want to connect to on the [MyGet Gallery](https://myget.org/gallery) (or on the MyGet Enterprise Gallery).
 
 ![Gallery feed details](assets/gallery-feed.png)
 
-This will open a dialog where we can find the various endpoints for this feed.
+Once we found a feed of interest, we can get its connection details using the **Connect to feed** button. This will open a dialog where we can find the various endpoints for this feed.
 
 ![Gallery feed URL](assets/connect-gallery-feed.png)
 
@@ -44,17 +44,17 @@ We will need the NuGet V3 URL, so let's copy it for later use.
 
 #### Public feed
 
-To find the feed URL check the [Find the feed URL](#find-the-feed-url) section.
+We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
 
 #### Private feed
 
 #### Credential Provider for Visual Studio
 
-inspiration: http://docs.myget.org/docs/reference/credential-provider-for-visual-studio but needs to be nicer
+TODO - inspiration: http://docs.myget.org/docs/reference/credential-provider-for-visual-studio but needs to be nicer
 
 ### JetBrains Rider
 
-The first step in connecting Rider to a MyGet feed is adding it as a package source. We can do this using NuGet.exe (via good old [NuGet.config](https://docs.microsoft.com/en-us/nuget/schema/nuget-config-file#package-source-sections), or from within Rider. From the **NuGet tool window** (<kbd>Alt</kbd> + <kbd>7</kbd>), open the **Sources** tab. This will show us all of the NuGet configuration files that are in play, and a list of all feeds configured.
+The first step in connecting Rider to a MyGet feed is adding it as a package source. We can do this using `NuGet.exe` (via good old [NuGet.config](https://docs.microsoft.com/en-us/nuget/schema/nuget-config-file#package-source-sections), or from within Rider. From the **NuGet tool window** (<kbd>Alt</kbd> + <kbd>7</kbd>), open the **Sources** tab. This will show us all of the NuGet configuration files that are in play, and a list of all feeds configured.
 
 ![NuGet tool window](assets/rider-feeds-pane.png)
 
@@ -62,9 +62,9 @@ From here, we can add our MyGet feed (or edit an existing entry). We will have t
 
 #### Private feed
 
-Details on how to find the feed URL can be found in the [Find the feed URL](#find-the-feed-url) section.
+Details on how to find the feed URL can be found in the [Find the feed URL](#determining-the-feed-url) section.
 
-In order to consume our private feed we have to give the feed URL and enter our credentials.
+In order to consume our private feed we have to enter the feed URL and enter our credentials.
 
 ![Feed with credentials](assets/feed-with-credentials.png)
 
@@ -74,27 +74,25 @@ When using the pre-authenticated feed we, of course, don't need to enter our cre
 
 #### Public feed
 
-Details on how to find the feed URL can be found in the [Find the feed URL](#find-the-feed-url) section.
+We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
 
-The feed types can be found in the **FEED DETAILS** section under **Feed Type**.
+The feed types can be found in the **Feed Details** section under **Feed Type**.
 
 ![Feed types](assets/feed-types.png)
 
-After making sure our feed is a public one we can consume it in Rider.
+After making sure our feed is a public one we can consume it in Rider. To work with public feeds, we can just leave the credentials empty and Rider will connect to the feed.
 
 ![Feed without credentials](assets/rider-feed-no-credentials.png)
-
-To work with public feeds, we just leave the credentials empty and Rider will connect to the feed.
 
 ### NuGet CLI
 
 #### Private feed
 
-Details on how to find the feed URL can be found in the [Find the feed URL](#find-the-feed-url) section.
+We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
 
 #### Public feed
 
-Details on how to find the feed URL can be found in the [Find the feed URL](#find-the-feed-url) section.
+We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
 
 ### dotnet CLI
 
@@ -102,11 +100,21 @@ In this section we are going to add our packages using the dotnet CLI. Make sure
 
 #### Private feed
 
-Details on how to find the feed URL can be found in the [Find the feed URL](#find-the-feed-url) section.
+We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
 
 #### Public feed
 
-Details on how to find the feed URL can be found in the [Find the feed URL](#find-the-feed-url) section.
+![dotnet add command](assets/dotnet-add-command.png)
+
+Let's copy this command and paste it on the command line. In our example, we'll use the Windows Comand Prompt. Do make sure the working directory is the root of the project we want to add the package(s) to (where the `.csproj` file lives).
+
+![dotnet add command in prompt](assets/dotnet-add-command-prompt.png)
+
+After running this command, we'll see the following output, which tells us our package is installed:
+![dotnet add command output](assets/dotnet-add-command-prompt-output.png)
+
+In the project file, we can verify our package is installed. The `dotnet add` command will have added a `PackageReference` element.
+![dotnet Project file](assets/dotnet-project-file.png)
 
 When adding a package to our project using the `dotnet` CLI we can get a generated command from the package details in our feed.
 
@@ -126,17 +134,19 @@ In the project file, we can verify our package is installed. The `dotnet add` co
 
 #### Public feed
 
-Details on how to find the feed URL can be found in the [Find the feed URL](#find-the-feed-url) section.
+We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
 
 #### Private feed
 
-Details on how to find the feed URL can be found in the [Find the feed URL](#find-the-feed-url) section.
+We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
 
 ## Creating NuGet/.NET Core packages
 
-could have links to the NuGet documentation
+TODO could have links to the NuGet documentation
 
 ## Publishing to MyGet
+
+TODO
 
 ## Troubleshooting
 
