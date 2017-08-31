@@ -104,7 +104,17 @@ We will need the URL for the feed we want to connect to. Learn more about [deter
 
 #### Public feed
 
-We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
+![dotnet add command](assets/dotnet-add-command.png)
+
+Let's copy this command and paste it on the command line. In our example, we'll use the Windows Comand Prompt. Do make sure the working directory is the root of the project we want to add the package(s) to (where the `.csproj` file lives).
+
+![dotnet add command in prompt](assets/dotnet-add-command-prompt.png)
+
+After running this command, we'll see the following output, which tells us our package is installed:
+![dotnet add command output](assets/dotnet-add-command-prompt-output.png)
+
+In the project file, we can verify our package is installed. The `dotnet add` command will have added a `PackageReference` element.
+![dotnet Project file](assets/dotnet-project-file.png)
 
 When adding a package to our project using the `dotnet` CLI we can get a generated command from the package details in our feed.
 
