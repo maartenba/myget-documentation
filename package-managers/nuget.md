@@ -118,11 +118,37 @@ In the project file, we can verify our package is installed. The `dotnet add` co
 
 ### Paket
 
-#### Public feed
+Just like NuGet, Paket is a dependency manager for .NET and Xamarin projects. It is designed to work with NuGet packages but also enables referencing files directly from GitHub repositories and GitHub Gists.
+
+Let's see how you can use Paket with a MyGet feed.
+
+#### Private feed
 
 We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
 
-#### Private feed
+To work with private feeds, you will have to provide Paket with credentials of some sort. In `paket.dependencies`, you can specify the credentials to be used for a feed.
+
+Plain-text password:
+
+```bash
+source https://www.myget.org/F/paket-demo/api/v2 username: "username_here" password: "password_here"
+```
+
+This does, however, require checking in credentials into source control. Alternatively, you can make use of environment variables:
+
+```bash
+source https://www.myget.org/F/paket-demo/api/v2 username: "%MY_USERNAME%" password: "%MY_PASSWORD%"
+```
+
+Using this technique is interesting as it makes it possible to securely provide credentials in an environment variable on build servers like [TeamCity](https://www.jetbrains.com/) with its [build parameters](https://confluence.jetbrains.com/display/TCD8/Defining+and+Using+Build+Parameters+in+Build+Configuration) or MyGet's own [build services and support for environment variables](https://docs.myget.org/docs/reference/build-services#User-defined_environment_variables).
+
+<p class="alert alert-info">
+    <strong>Note:</strong> It is also possible to make use of a <a href="../reference/feed-endpoints.md#private-feed-endpoints-and-authentication">pre-authenticated feed URL</a>. Do keep in mind that such URLs contain a MyGet API key and should be treated as confidential.
+
+  The Paket source will look like the following in such case: `https://www.myget.org/F/paket-demo/auth/147fae61-95fb-4747-9e54-09debb256c99/`
+</p>
+
+#### Public feed
 
 We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
 
