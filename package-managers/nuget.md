@@ -86,9 +86,44 @@ After making sure our feed is a public one we can consume it in Rider. To work w
 
 ### NuGet CLI
 
+NuGet package restore relies on the [NuGet.exe](https://nuget.org/nuget.exe) commandline tool by using the [install](https://docs.microsoft.com/nuget/tools/nuget-exe-cli-reference#Install_Command) command. The commandline will either prompt us for credentials or will look for credentials in the `NuGet.config` file in `%AppData%\NuGet\nuget.config` (if we use the Non-Interactive option).
+
 #### Private feed
 
 We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
+
+To register our credentials in the `NuGet.config` file we use the following commands:
+
+<p class="alert alert-info">
+    <strong>Note:</strong> These credentials are non-transferable.
+</p>
+
+```shell
+nuget setapikey [apikey] -source [url]
+nuget sources add -name [name] -source [url] -user [username] -pass [pwd]
+```
+
+To update an already registered package source:
+
+```shell
+nuget setapikey [apikey] -source [url]
+nuget sources update -name [name] -source [url] -user [username] -pass [pwd]
+```
+
+If we want dont want to add our credentials to the global `NuGet.config` but to a specific one, we use the `-configFile` parameter and specify the path to our prefered `NuGet.config` file:
+
+```shell
+nuget setapikey [apikey] -source [url] -configFile [configFilePath]
+nuget sources add -name [name] -source [url] -user [username] -pass [pwd] -configFile [path]
+```
+
+If we want our credentials to be transferable for lets say, use by a build server we add the `-StorePasswordInClearText` flag:
+
+```shell
+nuget setapikey [apikey] -source [url] -configFile [configFilePath]
+nuget sources update -name [name] -source [url] -user [username] -pass [pwd] -configFile [path] -StorePasswordInClearText
+```
+
 
 #### Public feed
 
@@ -100,7 +135,7 @@ In this section we are going to add our packages using the dotnet CLI. Make sure
 
 #### Private feed
 
-We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
+We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url). For installation per package, we need the pre-authenticated feed URL. As we do not recommend this option because of security reasons we do recommend using the [NuGet CLI](#nuget-cli) to configure your feeds instead.
 
 #### Public feed
 
@@ -130,13 +165,13 @@ To work with private feeds, you will have to provide Paket with credentials of s
 
 Plain-text password:
 
-```bash
+```shell
 source https://www.myget.org/F/paket-demo/api/v2 username: "username_here" password: "password_here"
 ```
 
 This does, however, require checking in credentials into source control. Alternatively, you can make use of environment variables:
 
-```bash
+```shell
 source https://www.myget.org/F/paket-demo/api/v2 username: "%MY_USERNAME%" password: "%MY_PASSWORD%"
 ```
 
@@ -145,7 +180,7 @@ Using this technique is interesting as it makes it possible to securely provide 
 <p class="alert alert-info">
     <strong>Note:</strong> It is also possible to make use of a <a href="../reference/feed-endpoints.md#private-feed-endpoints-and-authentication">pre-authenticated feed URL</a>. Do keep in mind that such URLs contain a MyGet API key and should be treated as confidential.
 
-  The Paket source will look like the following in such case: `https://www.myget.org/F/paket-demo/auth/147fae61-95fb-4747-9e54-09debb256c99/`
+  The Paket source will look like the following in such case: `https://www.myget.org/F/paket-demo/auth/147e9e61-95db-4747-9e5a-09debb256c99/`
 </p>
 
 #### Public feed
