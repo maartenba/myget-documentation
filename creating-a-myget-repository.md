@@ -10,7 +10,7 @@ Naming things can be hard. It might be helpful to know at this stage:
 
 1. The feed name will be used in URL's to work with the feed. Make it something you and team members can remember. Feed are always owned by a user, and in the UI they are prefixed with the feed owner's username.
 2. If you change your mind about the feed name, the feed can be deleted and a new feed can be ceated. However, this is not a satisfactory option when there are already many packages on the feed - we'd have to add them all again.
-3. While there isn't a _Rename feed_ function, we can accomplish the same thing via the _Clone feed_ feature - even for a feed containing packages. 
+3. While there isn't a _Rename feed_ function, we can accomplish the same thing via the _Clone feed_ feature - even for a feed containing packages.
 
 ## Feed description
 
@@ -31,4 +31,3 @@ If you are a MyGet Enterprise user, a fourth feed type is available:
 Once we provide these details, we can create the feed by clicking the **Create feed** button. Our feed will be created and we can start adding packages or invite other people to collaborate.
 
 ![New feed was created](assets/new-feed-created.png)
-
