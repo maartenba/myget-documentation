@@ -99,35 +99,46 @@ To register our credentials in the `NuGet.config` file we use the following comm
 </p>
 
 ```shell
-nuget setapikey [apikey] -source [url]
-nuget sources add -name [name] -source [url] -user [username] -pass [pwd]
+nuget setapikey [apikey] -source [feedUrl]
+nuget sources add -name [name] -source [feedUrl] -user [username] -pass [pwd]
 ```
 
 To update an already registered package source:
 
 ```shell
-nuget setapikey [apikey] -source [url]
-nuget sources update -name [name] -source [url] -user [username] -pass [pwd]
+nuget setapikey [apikey] -source [feedUrl]
+nuget sources update -name [name] -source [feedUrl] -user [username] -pass [pwd]
 ```
 
 If we want dont want to add our credentials to the global `NuGet.config` but to a specific one, we use the `-configFile` parameter and specify the path to our prefered `NuGet.config` file:
 
 ```shell
-nuget setapikey [apikey] -source [url] -configFile [configFilePath]
-nuget sources add -name [name] -source [url] -user [username] -pass [pwd] -configFile [path]
+nuget setapikey [apikey] -source [feedUrl] -configFile [configFilePath]
+nuget sources add -name [name] -source [feedUrl] -user [username] -pass [pwd] -configFile [path]
 ```
 
 If we want our credentials to be transferable for lets say, use by a build server we add the `-StorePasswordInClearText` flag:
 
 ```shell
-nuget setapikey [apikey] -source [url] -configFile [configFilePath]
-nuget sources update -name [name] -source [url] -user [username] -pass [pwd] -configFile [path] -StorePasswordInClearText
+nuget setapikey [apikey] -source [feedUrl] -configFile [configFilePath]
+nuget sources update -name [name] -source [feedUrl] -user [username] -pass [pwd] -configFile [path] -StorePasswordInClearText
 ```
-
 
 #### Public feed
 
 We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
+
+To add our feed to the global `NuGet.config` file we can use the command:
+
+```shell
+nuget sources add -name [name] -source [feedUrl]
+```
+
+If our build server needs to know about this feed, we can add it to a `NuGet.config` file in our project and push it to our code repository. To configure this feed in the specific `NuGet.config` file, we add the  `-configFile` parameter:
+
+```shell
+nuget sources add -name [name] -source [feedUrl] -configFile [path]
+```
 
 ### dotnet CLI
 
