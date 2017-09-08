@@ -42,15 +42,23 @@ We will need the NuGet V3 URL, so let's copy it for later use.
 
 ### Visual Studio
 
-#### Public feed
+#### Private feed
 
 We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
 
-#### Private feed
+We can register a MyGet feed the same way we register any NuGet package source by using the Package Manager Settings dialog. We can find it under _Tools > Library Package Manager > Package Manager Settings_ in the Visual Studio menu.
+![View of the Package sources tab in the Visual Studio Settings](assets/faq_register_myget_feed.png)
 
-#### Credential Provider for Visual Studio
+When we try to consume this feed we will be prompted to enter our MyGet credentials. After entering our credentials the available packages will be shown.
+![A view of the Visual Studio package manager](assets/visual-studio-package-manager.png)
 
-TODO - inspiration: http://docs.myget.org/docs/reference/credential-provider-for-visual-studio but needs to be nicer
+<p class="alert alert-success">
+    <strong>Tip:</strong> We can also use the <a href="../reference/credential-provider-visual-studio.md">MyGet Credential Provider for Visual Studio 2017</a>.
+</p>
+
+#### Public feed
+
+We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
 
 ### JetBrains Rider
 

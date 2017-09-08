@@ -1,0 +1,1 @@
+# MyGet Credential Provider for Visual Studio 2017
