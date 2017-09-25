@@ -57,19 +57,22 @@ More information on the `nuget sources` can be found in the [NuGet CLI Reference
 
 If we run the command successfully, the resulting `NuGet.config` file will look similar to the below example (we used "MyGetFeed" as the feed name):
 
-<pre><code>&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;configuration&gt;
-  &lt;packageSources&gt;
-    &lt;add key="Microsoft Visual Studio Offline Packages" value="C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\"/&gt;
-    &lt;add key="MyGetFeed" value="https://www.myget.org/F/MyGetFeed/api/v3/index.json"/&gt;
-  &lt;/packageSources&gt;
-  &lt;packageSourceCredentials&gt;
-    &lt;MyGetFeed&gt;
-        &lt;add key="Username" value="{username}" /&gt;
-        &lt;add key="ClearTextPassword" value="{MyGet access token}" /&gt;
-    &lt;/MyGetFeed&gt;
-  &lt;/packageSourceCredentials&gt;
-&lt;/configuration&gt;</pre></code>
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <packageSources>
+    <add key="Microsoft Visual Studio Offline Packages" value="C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\"/>
+    <add key="MyGetFeed" value="https://www.myget.org/F/MyGetFeed/api/v3/index.json"/>
+  </packageSources>
+  <packageSourceCredentials>
+    <MyGetFeed>
+        <add key="Username" value="{username}" />
+        <add key="ClearTextPassword" value="{MyGet access token}" />
+    </MyGetFeed>
+  </packageSourceCredentials>
+</configuration>
+```
 
 #### Pushing NuGet packages to MyGet using nuget.exe CLI
 
@@ -147,19 +150,21 @@ Once we have the NuGet Service Connection to our MyGet feed(s), we can start con
    Unfortunately, `nuget.exe` does not have a `nuget.exe config create` command. 
    We can dive into the NuGet CLI docs, or we can copy the below sample `NuGet.config` file and modify as needed.
 
-	<pre><code>&lt;?xml version="1.0" encoding="utf-8"?&gt;
-	&lt;configuration&gt;
-		&lt;packageSources&gt;
-		&lt;!-- remove any machine-wide sources with &lt;clear/&gt; --&gt;
-		&lt;clear /&gt;
-		&lt;add key="MyMyGetFeed" value="https://www.myget.org/F/demo/api/v3/index.json" /&gt;
-		&lt;!-- optional (remove if not needed): also get packages from the nuget.org --&gt;
-		&lt;add key="nuget.org" value="https://www.nuget.org/api/v2/" /&gt;
-		&lt;/packageSources&gt;
-		&lt;activePackageSource&gt;
-		&lt;add key="All" value="(Aggregate source)" /&gt;
-		&lt;/activePackageSource&gt;
-	&lt;/configuration&gt;</code></pre>
+```
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <packageSources>
+        <!-- remove any machine-wide sources with <clear/> -->
+        <clear />
+        <add key="MyMyGetFeed" value="https://www.myget.org/F/demo/api/v3/index.json" />
+        <!-- optional (remove if not needed): also get packages from the nuget.org -->
+        <add key="nuget.org" value="https://www.nuget.org/api/v2/" />
+    </packageSources>
+    <activePackageSource>
+        <add key="All" value="(Aggregate source)" />
+    </activePackageSource>
+</configuration>
+```
 
 That's it! You can now restore NuGet packages from your MyGet feeds on VSTS Build!
 If you also want to publish your packages to MyGet, you can continue reading in the next section.
@@ -193,15 +198,19 @@ MyGet has the concept of *[Upstream Sources](/how-to/working-with-upstream-packa
 To make use of this integration, you need to add a new upstream source to your MyGet feed:
 
 1.	Go to feed settings and select the **Upstream Sources** tab. Select **Visual Studio Team Services build definition** from the **Add upstream source** button.
+
 	![Step 1](/assets/add package source button.png)
 
 2.	Provide your Visual Studio Team Services **account name** in the dialog that appears and click **Continue**.
+
 	![Step 2](assets/vsts/upstream-source-step2.png)
 
 3.	Select the **Team Project** and **Build Definition** to add as the package source for your feed. Click the **Add** button to complete the configuration of the new package source.
+
 	![Step 3](assets/vsts/upstream-source-step3.png)
 
 4.	The new VSTS package source has been added to your feed’s package sources, and newly built NuGet packages will be fetched from your Build Definition’s drop location automatically and pushed to the MyGet feed.
+
 	![Step 4](assets/vsts/upstream-source-step4.png)
 
 <hr/>
