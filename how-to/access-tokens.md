@@ -2,7 +2,7 @@
 
 When creating a MyGet account, several credentials are created. A username/password combination, a primary access token (API key) and optionally a linked identity.
 
-The username/password combination can be used to log on to the MyGet web interface, as well consuming packages from package managers such as Visual Studio, `NuGet.exe`, `dotnet`, `paket`, `npm`, `bower`, `mvn`, ... Additionally, every user gets at least one access token, which can be used when publishing packages using package management system clients.
+The username/password combination can be used to log on to the MyGet web interface, as well consuming packages from package managers such as Visual Studio, `NuGet.exe`, `dotnet`, `paket`, `npm`, `bower`, `mvn`, ... Additionally, every user gets at least one access token, which can be used when publishing packages using package management clients.
 
 Access tokens can be used for all authentication purposes, except logging into the MyGet.org website. They can be used when pushing to your MyGet feed or as an alternate password when authenticating against a private feed.
 
