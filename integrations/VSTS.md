@@ -251,21 +251,26 @@ Alternatively, you can also setup MyGet integration from within Visual Studio Te
 1.	Go to your VSTS Team Project **Administration** dashboard and select the **Service Hooks** tab.
 
 2.	Click the **Add Service Hook** button
-	![Step 1](Images\vso-service-hook-step1.png)
+
+	![Step 1](assets/vsts/service-hook-step1.png)
 
 3.	Within the New Service Hooks Subscription dialog, select the *MyGet* service and click the *Next* button.
-	![Step 2](Images\vso-service-hook-step2.png)
+
+	![Step 2](assets/vsts/service-hook-step2.png)
 
 4.	Select the **Code is pushed** event type and the desired **Repository** and **Branch** settings. Click **Next** to continue.
-	![Step 3](Images\vso-service-hook-step3.png)
+
+	![Step 3](assets/vsts/service-hook-step3.png)
 
 5.	Select the **Trigger a MyGet build** action and provide the target **Feed name** and **Build Source Identifier**.
-	![Step 4](Images\vso-service-hook-step4.png)
+
+	![Step 4](assets/vsts/service-hook-step4.png)
 
 	<p class="alert alert-info">
 		<strong>Note:</strong> You can find the Build Source identifier in your MyGet feed settings > Build Sources, as highlighted below:<br/><br/>
-		<img src="Images/vso-service-hook-step4-note.png" alt="Step 4 Note"/>
+		<img src="assets/vsts/service-hook-step4-note.png" alt="Step 4 Note"/>
 	</p>
 
 6.	Click **Test** if you want to test this service hook first, or click **Finish** to complete the wizard. The new service hook is now listed as shown below:
-	![Step 5](Images\vso-service-hook-step5.png)
+
+	![Step 5](assets/vsts/service-hook-step5.png)
