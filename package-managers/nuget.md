@@ -42,15 +42,23 @@ We will need the NuGet V3 URL, so let's copy it for later use.
 
 ### Visual Studio
 
-#### Public feed
+#### Private feed
 
 We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
 
-#### Private feed
+We can register a MyGet feed the same way we register any NuGet package source by using the Package Manager Settings dialog. We can find it under _Tools \| Library Package Manager \| Package Manager Settings_ in the Visual Studio menu.
+![View of the Package sources tab in the Visual Studio Settings](assets/faq_register_myget_feed.png)
 
-#### Credential Provider for Visual Studio
+When we try to consume this feed we will be prompted to enter our MyGet credentials. After entering our credentials the available packages will be shown.
+![A view of the Visual Studio package manager](assets/visual-studio-package-manager.png)
 
-TODO - inspiration: http://docs.myget.org/docs/reference/credential-provider-for-visual-studio but needs to be nicer
+<p class="alert alert-success">
+    <strong>Tip:</strong> We can also use the <a href="../reference/credential-provider-visual-studio.md">MyGet Credential Provider for Visual Studio 2017</a>.
+</p>
+
+#### Public feed
+
+We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
 
 ### JetBrains Rider
 
@@ -86,13 +94,59 @@ After making sure our feed is a public one we can consume it in Rider. To work w
 
 ### NuGet CLI
 
+NuGet package restore relies on the [NuGet.exe](https://nuget.org/nuget.exe) command line tool by using the [install](https://docs.microsoft.com/nuget/tools/nuget-exe-cli-reference#Install_Command) command. The command line will either prompt us for credentials or will look for credentials in the `NuGet.config` file in `%AppData%\NuGet\nuget.config` (if we use the `-NonInteractive` switch).
+
 #### Private feed
 
 We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
 
+To register our credentials in the `NuGet.config` file we'll use the following commands:
+
+<p class="alert alert-info">
+    <strong>Note:</strong> These credentials are personal and should not be shared with others.
+</p>
+
+```shell
+nuget setapikey [apikey] -source [feedUrl]
+nuget sources add -name [name] -source [feedUrl] -user [username] -pass [pwd]
+```
+
+To update an already registered package source:
+
+```shell
+nuget setapikey [apikey] -source [feedUrl]
+nuget sources update -name [name] -source [feedUrl] -user [username] -pass [pwd]
+```
+
+If we don't want to add our credentials to the global `NuGet.config` but to a specific one, we can use the `-configFile` parameter and specify the path to our prefered `NuGet.config` file:
+
+```shell
+nuget setapikey [apikey] -source [feedUrl] -configFile [configFilePath]
+nuget sources add -name [name] -source [feedUrl] -user [username] -pass [pwd] -configFile [path]
+```
+
+If we want our credentials to be transferable for lets say, use by a build server we add the `-StorePasswordInClearText` flag:
+
+```shell
+nuget setapikey [apikey] -source [feedUrl] -configFile [configFilePath]
+nuget sources update -name [name] -source [feedUrl] -user [username] -pass [pwd] -configFile [path] -StorePasswordInClearText
+```
+
 #### Public feed
 
 We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
+
+To add our feed to the global `NuGet.config` file we can use the command:
+
+```shell
+nuget sources add -name [name] -source [feedUrl]
+```
+
+If our build server needs to know about this feed, we can add it to a `NuGet.config` file in our project and push it to our code repository. To configure this feed in the specific `NuGet.config` file, we add the  `-configFile` parameter:
+
+```shell
+nuget sources add -name [name] -source [feedUrl] -configFile [path]
+```
 
 ### dotnet CLI
 
@@ -100,23 +154,9 @@ In this section we are going to add our packages using the dotnet CLI. Make sure
 
 #### Private feed
 
-We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
+We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url). Alternatively, we can use the pre-authenticated feed URL. Since pre-authenticated feed URLs contain your personal access token in the URL, we advise using the [NuGet command-line tool (CLI)](#nuget-cli) to configure your feeds instead. If you do want to make use of a pre-authenticated endpoint, we recommend creating a separate access token specifically for this purpose so that it can be revoked at any time. Access tokens can be managed from your MyGet profile.
 
 #### Public feed
-
-![dotnet add command](assets/dotnet-add-command.png)
-
-Let's copy this command and paste it on the command line. In our example, we'll use the Windows Comand Prompt. Do make sure the working directory is the root of the project we want to add the package(s) to (where the `.csproj` file lives).
-
-![dotnet add command in prompt](assets/dotnet-add-command-prompt.png)
-
-After running this command, we'll see the following output, which tells us our package is installed:
-![dotnet add command output](assets/dotnet-add-command-prompt-output.png)
-
-In the project file, we can verify our package is installed. The `dotnet add` command will have added a `PackageReference` element.
-![dotnet Project file](assets/dotnet-project-file.png)
-
-When adding a package to our project using the `dotnet` CLI we can get a generated command from the package details in our feed.
 
 ![dotnet add command](assets/dotnet-add-command.png)
 
@@ -132,11 +172,37 @@ In the project file, we can verify our package is installed. The `dotnet add` co
 
 ### Paket
 
-#### Public feed
+Just like NuGet, Paket is a package manager for .NET and Xamarin projects. It is designed to work with NuGet packages but also enables referencing files directly from GitHub repositories and GitHub Gists.
+
+Let's see how you can use Paket with a MyGet feed.
+
+#### Private feed
 
 We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
 
-#### Private feed
+To work with private feeds, you will have to provide Paket with credentials of some sort. In `paket.dependencies`, you can specify the credentials to be used for a feed.
+
+Plain-text password:
+
+```shell
+source https://www.myget.org/F/paket-demo/api/v2 username: "username_here" password: "password_here"
+```
+
+This does, however, require checking in credentials into source control. Alternatively, you can make use of environment variables:
+
+```shell
+source https://www.myget.org/F/paket-demo/api/v2 username: "%MY_USERNAME%" password: "%MY_PASSWORD%"
+```
+
+Using this technique is interesting as it makes it possible to securely provide credentials in an environment variable on build servers like [TeamCity](https://www.jetbrains.com/) with its [build parameters](https://confluence.jetbrains.com/display/TCD8/Defining+and+Using+Build+Parameters+in+Build+Configuration) or MyGet's own [build services and support for environment variables](https://docs.myget.org/docs/reference/build-services#User-defined_environment_variables).
+
+<p class="alert alert-info">
+    <strong>Note:</strong> It is also possible to make use of a <a href="../reference/feed-endpoints.md#private-feed-endpoints-and-authentication">pre-authenticated feed URL</a>. Do keep in mind that such URLs contain a MyGet API key and should be treated as confidential.
+
+  The Paket source will look like the following in such case: `https://www.myget.org/F/paket-demo/auth/147e9e61-95db-4747-9e5a-09debb256c99/`
+</p>
+
+#### Public feed
 
 We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
 
