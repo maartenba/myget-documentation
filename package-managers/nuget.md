@@ -46,7 +46,7 @@ We will need the NuGet V3 URL, so let's copy it for later use.
 
 We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
 
-We can register a MyGet feed the same way we register any NuGet package source by using the Package Manager Settings dialog. We can find it under _Tools > Library Package Manager > Package Manager Settings_ in the Visual Studio menu.
+We can register a MyGet feed the same way we register any NuGet package source by using the Package Manager Settings dialog. We can find it under _Tools | Library Package Manager | Package Manager Settings_ in the Visual Studio menu.
 ![View of the Package sources tab in the Visual Studio Settings](assets/faq_register_myget_feed.png)
 
 When we try to consume this feed we will be prompted to enter our MyGet credentials. After entering our credentials the available packages will be shown.
@@ -94,7 +94,7 @@ After making sure our feed is a public one we can consume it in Rider. To work w
 
 ### NuGet CLI
 
-NuGet package restore relies on the [NuGet.exe](https://nuget.org/nuget.exe) commandline tool by using the [install](https://docs.microsoft.com/nuget/tools/nuget-exe-cli-reference#Install_Command) command. The commandline will either prompt us for credentials or will look for credentials in the `NuGet.config` file in `%AppData%\NuGet\nuget.config` (if we use the Non-Interactive option).
+NuGet package restore relies on the [NuGet.exe](https://nuget.org/nuget.exe) command line tool by using the [install](https://docs.microsoft.com/nuget/tools/nuget-exe-cli-reference#Install_Command) command. The command line will either prompt us for credentials or will look for credentials in the `NuGet.config` file in `%AppData%\NuGet\nuget.config` (if we use the `-NonInteractive` switch).
 
 #### Private feed
 
@@ -103,7 +103,7 @@ We will need the URL for the feed we want to connect to. Learn more about [deter
 To register our credentials in the `NuGet.config` file we use the following commands:
 
 <p class="alert alert-info">
-    <strong>Note:</strong> These credentials are non-transferable.
+    <strong>Note:</strong> These credential are personal and should not be shared with others.
 </p>
 
 ```shell
@@ -118,7 +118,7 @@ nuget setapikey [apikey] -source [feedUrl]
 nuget sources update -name [name] -source [feedUrl] -user [username] -pass [pwd]
 ```
 
-If we want dont want to add our credentials to the global `NuGet.config` but to a specific one, we use the `-configFile` parameter and specify the path to our prefered `NuGet.config` file:
+If we don't want to add our credentials to the global `NuGet.config` but to a specific one, we can use the `-configFile` parameter and specify the path to our prefered `NuGet.config` file:
 
 ```shell
 nuget setapikey [apikey] -source [feedUrl] -configFile [configFilePath]
@@ -154,7 +154,7 @@ In this section we are going to add our packages using the dotnet CLI. Make sure
 
 #### Private feed
 
-We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url). For installation per package, we need the pre-authenticated feed URL. As we do not recommend this option because of security reasons we do recommend using the [NuGet CLI](#nuget-cli) to configure your feeds instead.
+We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url). Alternatively, we can use the pre-authenticated feed URL. Since pre-authenticated feed URLs contain your personal access token in the URL, we advise using the [NuGet command-line tool (CLI)](#nuget-cli) to configure your feeds instead. If you do want to make use of a pre-authenticated endpoint, we recommend creating a separate access token specifically for this purpose so that it can be revoked at any time. Access tokens can be managed from your MyGet profile.
 
 #### Public feed
 
@@ -172,7 +172,7 @@ In the project file, we can verify our package is installed. The `dotnet add` co
 
 ### Paket
 
-Just like NuGet, Paket is a dependency manager for .NET and Xamarin projects. It is designed to work with NuGet packages but also enables referencing files directly from GitHub repositories and GitHub Gists.
+Just like NuGet, Paket is a package manager for .NET and Xamarin projects. It is designed to work with NuGet packages but also enables referencing files directly from GitHub repositories and GitHub Gists.
 
 Let's see how you can use Paket with a MyGet feed.
 
