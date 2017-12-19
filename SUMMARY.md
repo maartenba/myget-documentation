@@ -191,3 +191,4 @@
 * [MyGet 2013.2](release-notes/myget-1.6.md)
 * [MyGet 2013.1](release-notes/myget-1.5.md)
 * [MyGet 2012.1](release-notes/myget-1.4.md)
+
