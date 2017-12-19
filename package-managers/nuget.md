@@ -46,7 +46,7 @@ We will need the NuGet V3 URL, so let's copy it for later use.
 
 We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
 
-We can register a MyGet feed the same way we register any NuGet package source by using the Package Manager Settings dialog. We can find it under _Tools | Library Package Manager | Package Manager Settings_ in the Visual Studio menu.
+We can register a MyGet feed the same way we register any NuGet package source by using the Package Manager Settings dialog. We can find it under _Tools \| Library Package Manager \| Package Manager Settings_ in the Visual Studio menu.
 ![View of the Package sources tab in the Visual Studio Settings](assets/faq_register_myget_feed.png)
 
 When we try to consume this feed we will be prompted to enter our MyGet credentials. After entering our credentials the available packages will be shown.
@@ -100,10 +100,10 @@ NuGet package restore relies on the [NuGet.exe](https://nuget.org/nuget.exe) com
 
 We will need the URL for the feed we want to connect to. Learn more about [determining the feed URL](#determining-the-feed-url).
 
-To register our credentials in the `NuGet.config` file we use the following commands:
+To register our credentials in the `NuGet.config` file we'll use the following commands:
 
 <p class="alert alert-info">
-    <strong>Note:</strong> These credential are personal and should not be shared with others.
+    <strong>Note:</strong> These credentials are personal and should not be shared with others.
 </p>
 
 ```shell
