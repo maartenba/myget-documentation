@@ -79,7 +79,7 @@
 
 ## Build services
 
-* TODO What are build services?
+* [TODO What is MyGet Build Services?](build-services/todo-what-are-build-services.md)
 * [TODO Convention-based builds](build-services/todo-convention-based-builds.md)
   * [For NuGet](build-services/todo-convention-based-builds/for-nuget.md)
   * For NPM
@@ -150,6 +150,10 @@
   * [ADFS integration](myget-enterprise/adfs-integration.md)
   * [Azure AD Integration](myget-enterprise/azure-ad-integration.md)
   * [Okta integration](myget-enterprise/okta-integration.md)
+
+## Integrations
+
+* [Visual Studio Team Services](integrations/VSTS.md)
 
 ## Reference
 
